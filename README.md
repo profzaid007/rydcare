@@ -344,4 +344,3 @@ For questions or issues:
 ---
 
 **Built with Progressive Enhancement** - Works great without JavaScript, even better with it!
-# rydcare
