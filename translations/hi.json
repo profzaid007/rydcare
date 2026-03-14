@@ -1,0 +1,118 @@
+{
+  "brand": {
+    "name": "RydCare"
+  },
+  "nav": {
+    "home": "[HI] Home",
+    "services": "[HI] Services",
+    "why": "[HI] Why Us",
+    "faq": "[HI] FAQ"
+  },
+  "hero": {
+    "title": "[HI] Your Ride, Minutes Away",
+    "subtitle": "[HI] Safe, reliable taxi service with professional drivers. Book your ride now and travel in comfort across the city.",
+    "cta_primary": "[HI] Book a Ride",
+    "cta_secondary": "[HI] Learn More",
+    "scroll": "[HI] Scroll Down"
+  },
+  "stats": {
+    "trips": "[HI] Rides Completed",
+    "rating": "[HI] App Rating",
+    "cities": "[HI] Cities",
+    "customers": "[HI] Happy Riders"
+  },
+  "why": {
+    "title": "[HI] Why Choose RydCare?",
+    "subtitle": "[HI] Experience the difference with our premium taxi service",
+    "comfort": {
+      "title": "[HI] Comfort & Convenience",
+      "desc": "[HI] Sit back and relax in clean, comfortable vehicles. Professional drivers handle navigation, traffic, and parking for you.",
+      "link": "[HI] Learn More →"
+    },
+    "transparent": {
+      "title": "[HI] Transparent Pricing",
+      "desc": "[HI] No surge pricing surprises. See upfront fares before booking. Pay securely in cash or through the app.",
+      "link": "[HI] View Pricing →"
+    },
+    "verified": {
+      "title": "[HI] Safe & Secure Rides",
+      "desc": "[HI] Background-verified drivers, real-time GPS tracking, and 24/7 customer support for your complete safety and peace of mind.",
+      "link": "[HI] Safety First →"
+    }
+  },
+  "services": {
+    "title": "[HI] Our Services",
+    "subtitle": "[HI] Choose the right ride for every journey",
+    "hourly": {
+      "title": "[HI] Hourly Booking",
+      "desc": "[HI] Book a taxi by the hour for shopping, errands, or multiple stops throughout the day with flexible packages.",
+      "f1": "[HI] Flexible timing",
+      "f2": "[HI] Multiple stops",
+      "f3": "[HI] Affordable rates"
+    },
+    "chauffeur": {
+      "title": "[HI] Premium Chauffeur",
+      "desc": "[HI] Premium taxi service with professional chauffeurs for business meetings, events, and VIP transportation needs.",
+      "f1": "[HI] Luxury vehicles",
+      "f2": "[HI] Professional chauffeurs",
+      "f3": "[HI] Executive comfort"
+    },
+    "corporate": {
+      "title": "[HI] Corporate Solutions",
+      "desc": "[HI] Corporate taxi solutions for employee transportation, business travel, and fleet management with dedicated support.",
+      "f1": "[HI] Volume discounts",
+      "f2": "[HI] Dedicated support",
+      "f3": "[HI] Monthly billing"
+    },
+    "events": {
+      "title": "[HI] Event Drivers",
+      "desc": "[HI] Taxi services for weddings, parties, and special events to ensure all your guests travel safely and comfortably.",
+      "f1": "[HI] Multiple vehicles",
+      "f2": "[HI] Event coordination",
+      "f3": "[HI] Custom packages"
+    },
+    "airport": {
+      "title": "[HI] Airport Transfer",
+      "desc": "[HI] Reliable taxi pickups and drops for airport travel. Flight tracking, meet & greet service, and luggage assistance included.",
+      "f1": "[HI] Flight tracking",
+      "f2": "[HI] Meet & greet",
+      "f3": "[HI] Fixed pricing"
+    },
+    "outstation": {
+      "title": "[HI] Outstation Trips",
+      "desc": "[HI] Long-distance taxi service for intercity travel, weekend getaways, and road trips with experienced drivers.",
+      "f1": "[HI] One-way or round-trip",
+      "f2": "[HI] Experienced drivers",
+      "f3": "[HI] Competitive rates"
+    }
+  },
+  "faq": {
+    "title": "[HI] Frequently Asked Questions",
+    "subtitle": "[HI] Everything you need to know about RydCare taxi service",
+    "q1": "[HI] How quickly can I get a ride?",
+    "a1": "[HI] RydCare taxis typically arrive within 5-10 minutes in major cities. You can also schedule rides in advance for guaranteed pickup at your preferred time.",
+    "q2": "[HI] Are your drivers verified and safe?",
+    "a2": "[HI] Yes. All RydCare drivers undergo thorough background verification, license checks, and safety training. We maintain strict safety standards for your peace of mind.",
+    "q3": "[HI] How is the fare calculated?",
+    "a3": "[HI] Fares are calculated based on distance traveled, trip duration, and ride type selected. You'll see the estimated fare upfront before booking. No hidden charges or unexpected surge pricing.",
+    "q4": "[HI] Can I book a taxi for multiple days or outstation trips?",
+    "a4": "[HI] Absolutely! We offer multi-day packages for outstation trips, weekend getaways, and extended travel. Choose our Outstation service or contact support for custom packages.",
+    "q5": "[HI] What if I need to cancel my ride?",
+    "a5": "[HI] You can cancel rides through the app anytime. Free cancellation is available up to 5 minutes after booking. Minimal cancellation fees may apply for last-minute cancellations.",
+    "q6": "[HI] Which cities does RydCare operate in?",
+    "a6": "[HI] RydCare currently operates in 25+ major cities across India including Mumbai, Delhi, Bangalore, Chennai, Hyderabad, and more. Check the app for availability in your area. We're expanding rapidly!"
+  },
+  "footer": {
+    "tagline": "[HI] Reliable taxi service at your fingertips, anytime, anywhere.",
+    "quick_links": "[HI] Quick Links",
+    "services": "[HI] Services",
+    "newsletter": "[HI] Stay Updated",
+    "newsletter_text": "[HI] Subscribe to get updates and special offers.",
+    "email_placeholder": "[HI] Your email",
+    "subscribe": "[HI] Subscribe",
+    "copyright": "© 2026 RydCare. All rights reserved.",
+    "privacy": "[HI] Privacy Policy",
+    "terms": "[HI] Terms of Service",
+    "cookies": "[HI] Cookie Policy"
+  }
+}
