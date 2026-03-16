@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional driver booking service - Get verified drivers in 30 minutes. Background-checked chauffeurs for hourly, corporate, and personal transportation needs.">
+    <meta name="description"
+        content="Professional driver booking service - Get verified drivers in 30 minutes. Background-checked chauffeurs for hourly, corporate, and personal transportation needs.">
     <meta name="keywords" content="driver service, chauffeur, car driver, hire driver, professional drivers">
     <title>RydCare - Premium Driver Booking Service</title>
-    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
+    <!-- Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <!-- Tailwind Config -->
     <script>
         tailwind.config = {
@@ -47,15 +54,16 @@
         }
     </script>
 </head>
+
 <body class="font-sans antialiased">
-    
+
     <!-- Skip to main content (Accessibility) -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    
+
     <!-- Hidden checkboxes for CSS-only interactivity -->
     <input type="checkbox" id="dark-toggle" class="hidden peer/dark" aria-label="Toggle dark mode">
     <input type="checkbox" id="menu-toggle" class="hidden peer/menu" aria-label="Toggle mobile menu">
-    
+
     <!-- Navigation -->
     <header class="header-nav">
         <nav class="nav-container" aria-label="Main navigation">
@@ -63,12 +71,11 @@
                 <!-- Logo -->
                 <div class="logo-container">
                     <a href="#top" class="logo" aria-label="RydCare Home">
-                        <img src="logosandassets/RydCare /RC Car Logo/RC Transparent PNG.png" 
-                             alt="RydCare" 
-                             class="logo-image">
+                        <img src="logosandassets/RydCare /RC Car Logo/RC Transparent PNG.png" alt="RydCare"
+                            class="logo-image">
                     </a>
                 </div>
-                
+
                 <!-- Desktop Navigation Links -->
                 <ul class="nav-links">
                     <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
@@ -76,20 +83,16 @@
                     <li><a href="#why-us" class="nav-link" data-i18n="nav.why">Why Us</a></li>
                     <li><a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
                 </ul>
-                
+
                 <!-- Controls (Dark Mode, Language, Mobile Menu) -->
                 <div class="nav-controls">
                     <!-- Dark Mode Toggle -->
-                    <label for="dark-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode" role="button" tabindex="0">
-                        <svg class="sun-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="5"/>
-                            <path d="M12 1v6m0 6v6M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24M1 12h6m6 0h6M4.22 19.78l4.24-4.24m5.08-5.08l4.24-4.24"/>
-                        </svg>
-                        <svg class="moon-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
-                        </svg>
+                    <label for="dark-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode" role="button"
+                        tabindex="0">
+                        <i class="fa-solid fa-sun sun-icon" aria-hidden="true"></i>
+                        <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
                     </label>
-                    
+
                     <!-- Language Selector -->
                     <div class="language-selector">
                         <label for="lang-select" class="sr-only">Select Language</label>
@@ -99,7 +102,7 @@
                             <option value="hi">HI</option>
                         </select>
                     </div>
-                    
+
                     <!-- Mobile Menu Toggle -->
                     <label for="menu-toggle" class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
                         <span class="hamburger-line"></span>
@@ -108,7 +111,7 @@
                     </label>
                 </div>
             </div>
-            
+
             <!-- Mobile Navigation Menu -->
             <div class="mobile-menu">
                 <ul class="mobile-menu-links">
@@ -120,10 +123,10 @@
             </div>
         </nav>
     </header>
-    
+
     <!-- Main Content -->
     <main id="main-content">
-        
+
         <!-- Hero Section -->
         <section id="home" class="hero-section">
             <div class="hero-container">
@@ -134,76 +137,63 @@
                             Get a Driver in <span class="gradient-text">30 Minutes</span>
                         </h1>
                         <p class="hero-subtitle" data-i18n="hero.subtitle">
-                            Professional, background-verified drivers at your doorstep. Drive in comfort while we handle the wheel.
+                            Professional, background-verified drivers at your doorstep. Drive in comfort while we handle
+                            the wheel.
                         </p>
                         <div class="hero-cta">
                             <a href="#services" class="btn btn-primary" data-i18n="hero.cta_primary">Book Now</a>
                             <a href="#why-us" class="btn btn-secondary" data-i18n="hero.cta_secondary">Learn More</a>
                         </div>
                     </div>
-                    
+
                     <!-- Hero Image/Illustration -->
                     <div class="hero-image">
                         <div class="hero-image-wrapper">
-                            <img src="logosandassets/RydCare /RC Car Logo/RC Transparent PNG.png" 
-                                 alt="RydCare Taxi Service" 
-                                 class="hero-logo">
+                            <img src="logosandassets/RydCare /RC Car Logo/RC Transparent PNG.png"
+                                alt="RydCare Taxi Service" class="hero-logo">
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Scroll Indicator -->
                 <div class="scroll-indicator">
                     <span class="scroll-text" data-i18n="hero.scroll">Scroll Down</span>
-                    <svg class="scroll-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 5v14M19 12l-7 7-7-7"/>
-                    </svg>
+                    <i class="fa-solid fa-chevron-down scroll-arrow" aria-hidden="true"></i>
                 </div>
             </div>
         </section>
-        
+
         <!-- Statistics Section -->
         <section id="stats" class="stats-section">
             <div class="container">
                 <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/>
-                            </svg>
+                            <i class="fa-solid fa-route" aria-hidden="true"></i>
                         </div>
-                        <div class="stat-number" data-target="90000000">90M+</div>
+                        <div class="stat-number" data-target="9000000">90M+</div>
                         <div class="stat-label" data-i18n="stats.trips">Trips Completed</div>
                     </div>
-                    
+
                     <div class="stat-card">
                         <div class="stat-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                            </svg>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
                         </div>
                         <div class="stat-number" data-target="4.8">4.8★</div>
                         <div class="stat-label" data-i18n="stats.rating">App Rating</div>
                     </div>
-                    
+
                     <div class="stat-card">
                         <div class="stat-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
+                            <i class="fa-solid fa-headset" aria-hidden="true"></i>
                         </div>
-                        <div class="stat-number" data-target="25">25+</div>
-                        <div class="stat-label" data-i18n="stats.cities">Cities</div>
+                        <div class="stat-number" data-target="24/7">24/7</div>
+                        <div class="stat-label" data-i18n="stats.cities">Service</div>
                     </div>
-                    
+
                     <div class="stat-card">
                         <div class="stat-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-                                <circle cx="9" cy="7" r="4"/>
-                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
-                            </svg>
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
                         </div>
                         <div class="stat-number" data-target="200000">200K+</div>
                         <div class="stat-label" data-i18n="stats.customers">Happy Customers</div>
@@ -211,63 +201,56 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Why Choose Us Section -->
         <section id="why-us" class="why-section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title" data-i18n="why.title">Why Choose RydCare?</h2>
-                    <p class="section-subtitle" data-i18n="why.subtitle">Experience the difference with our premium driver service</p>
+                    <p class="section-subtitle" data-i18n="why.subtitle">Experience the difference with our premium
+                        driver service</p>
                 </div>
-                
+
                 <div class="features-grid">
                     <!-- Feature 1 -->
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="11" width="18" height="10" rx="2"/>
-                                <circle cx="8.5" cy="18.5" r="2"/>
-                                <circle cx="15.5" cy="18.5" r="2"/>
-                                <path d="M5 11V6a1 1 0 011-1h12a1 1 0 011 1v5"/>
-                            </svg>
+                            <i class="fa-solid fa-car" aria-hidden="true"></i>
                         </div>
                         <h3 class="feature-title" data-i18n="why.comfort.title">Comfort & Convenience</h3>
                         <p class="feature-description" data-i18n="why.comfort.desc">
-                            Relax in the backseat of your own car. No need to worry about traffic, parking, or navigation.
+                            Relax in the backseat of your own car. No need to worry about traffic, parking, or
+                            navigation.
                         </p>
                         <a href="#services" class="feature-link" data-i18n="why.comfort.link">
                             Learn More →
                         </a>
                     </div>
-                    
+
                     <!-- Feature 2 -->
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <path d="M12 6v6l4 2"/>
-                            </svg>
+                            <i class="fa-solid fa-tag" aria-hidden="true"></i>
                         </div>
                         <h3 class="feature-title" data-i18n="why.transparent.title">Transparent Pricing</h3>
                         <p class="feature-description" data-i18n="why.transparent.desc">
-                            No hidden charges. Clear upfront pricing so you know exactly what you're paying for every ride.
+                            No hidden charges. Clear upfront pricing so you know exactly what you're paying for every
+                            ride.
                         </p>
                         <a href="#services" class="feature-link" data-i18n="why.transparent.link">
                             View Pricing →
                         </a>
                     </div>
-                    
+
                     <!-- Feature 3 -->
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                                <polyline points="22 4 12 14.01 9 11.01"/>
-                            </svg>
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
                         </div>
                         <h3 class="feature-title" data-i18n="why.verified.title">Verified Drivers</h3>
                         <p class="feature-description" data-i18n="why.verified.desc">
-                            All our drivers undergo thorough background checks and professional training for your safety.
+                            All our drivers undergo thorough background checks and professional training for your
+                            safety.
                         </p>
                         <a href="#services" class="feature-link" data-i18n="why.verified.link">
                             Safety First →
@@ -276,23 +259,21 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Services Section -->
         <section id="services" class="services-section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title" data-i18n="services.title">Our Services</h2>
-                    <p class="section-subtitle" data-i18n="services.subtitle">Professional drivers for every occasion</p>
+                    <p class="section-subtitle" data-i18n="services.subtitle">Professional drivers for every occasion
+                    </p>
                 </div>
-                
+
                 <div class="services-grid">
                     <!-- Service 1 -->
                     <div class="service-card">
                         <div class="service-icon-wrapper">
-                            <svg class="service-icon" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12 6 12 12 16 14"/>
-                            </svg>
+                            <i class="fa-solid fa-hourglass-half service-icon" aria-hidden="true"></i>
                         </div>
                         <h3 class="service-title" data-i18n="services.hourly.title">Hourly Booking</h3>
                         <p class="service-description" data-i18n="services.hourly.desc">
@@ -304,13 +285,11 @@
                             <li data-i18n="services.hourly.f3">Affordable rates</li>
                         </ul>
                     </div>
-                    
+
                     <!-- Service 2 -->
                     <div class="service-card">
                         <div class="service-icon-wrapper">
-                            <svg class="service-icon" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
-                            </svg>
+                            <i class="fa-solid fa-crown service-icon" aria-hidden="true"></i>
                         </div>
                         <h3 class="service-title" data-i18n="services.chauffeur.title">Premium Chauffeur</h3>
                         <p class="service-description" data-i18n="services.chauffeur.desc">
@@ -322,17 +301,16 @@
                             <li data-i18n="services.chauffeur.f3">Executive experience</li>
                         </ul>
                     </div>
-                    
+
                     <!-- Service 3 -->
                     <div class="service-card">
                         <div class="service-icon-wrapper">
-                            <svg class="service-icon" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
-                            </svg>
+                            <i class="fa-solid fa-van-shuttle service-icon" aria-hidden="true"></i>
                         </div>
                         <h3 class="service-title" data-i18n="services.corporate.title">Corporate Solutions</h3>
                         <p class="service-description" data-i18n="services.corporate.desc">
-                            Reliable driver services for your business needs including employee transportation and fleet management.
+                            Reliable driver services for your business needs including employee transportation and fleet
+                            management.
                         </p>
                         <ul class="service-features">
                             <li data-i18n="services.corporate.f1">Volume discounts</li>
@@ -340,20 +318,16 @@
                             <li data-i18n="services.corporate.f3">Monthly billing</li>
                         </ul>
                     </div>
-                    
+
                     <!-- Service 4 -->
                     <div class="service-card">
                         <div class="service-icon-wrapper">
-                            <svg class="service-icon" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-                                <circle cx="9" cy="7" r="4"/>
-                                <path d="M23 21v-2a4 4 0 00-3-3.87"/>
-                                <path d="M16 3.13a4 4 0 010 7.75"/>
-                            </svg>
+                            <i class="fa-solid fa-champagne-glasses service-icon" aria-hidden="true"></i>
                         </div>
                         <h3 class="service-title" data-i18n="services.events.title">Event Drivers</h3>
                         <p class="service-description" data-i18n="services.events.desc">
-                            Multiple drivers for weddings, parties, and special events to ensure everyone gets home safely.
+                            Multiple drivers for weddings, parties, and special events to ensure everyone gets home
+                            safely.
                         </p>
                         <ul class="service-features">
                             <li data-i18n="services.events.f1">Multiple drivers</li>
@@ -361,13 +335,11 @@
                             <li data-i18n="services.events.f3">Custom packages</li>
                         </ul>
                     </div>
-                    
+
                     <!-- Service 5 -->
                     <div class="service-card">
                         <div class="service-icon-wrapper">
-                            <svg class="service-icon" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
-                            </svg>
+                            <i class="fa-solid fa-plane-departure service-icon" aria-hidden="true"></i>
                         </div>
                         <h3 class="service-title" data-i18n="services.airport.title">Airport Transfer</h3>
                         <p class="service-description" data-i18n="services.airport.desc">
@@ -379,14 +351,11 @@
                             <li data-i18n="services.airport.f3">Luggage assistance</li>
                         </ul>
                     </div>
-                    
+
                     <!-- Service 6 -->
                     <div class="service-card">
                         <div class="service-icon-wrapper">
-                            <svg class="service-icon" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
+                            <i class="fa-solid fa-location-dot service-icon" aria-hidden="true"></i>
                         </div>
                         <h3 class="service-title" data-i18n="services.outstation.title">Outstation Trips</h3>
                         <p class="service-description" data-i18n="services.outstation.desc">
@@ -401,75 +370,82 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- FAQ Section -->
         <section id="faq" class="faq-section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
-                    <p class="section-subtitle" data-i18n="faq.subtitle">Everything you need to know about our service</p>
+                    <p class="section-subtitle" data-i18n="faq.subtitle">Everything you need to know about our service
+                    </p>
                 </div>
-                
+
                 <div class="faq-container">
                     <details class="faq-item">
                         <summary class="faq-question" data-i18n="faq.q1">
                             How quickly can I get a driver?
                         </summary>
                         <p class="faq-answer" data-i18n="faq.a1">
-                            Our drivers typically arrive within 30 minutes for instant bookings. You can also schedule drivers in advance for future trips at your convenience.
+                            Our drivers typically arrive within 30 minutes for instant bookings. You can also schedule
+                            drivers in advance for future trips at your convenience.
                         </p>
                     </details>
-                    
+
                     <details class="faq-item">
                         <summary class="faq-question" data-i18n="faq.q2">
                             Are your drivers verified and trained?
                         </summary>
                         <p class="faq-answer" data-i18n="faq.a2">
-                            Yes, absolutely. All our drivers undergo comprehensive background checks, verification processes, and professional training. Safety is our top priority.
+                            Yes, absolutely. All our drivers undergo comprehensive background checks, verification
+                            processes, and professional training. Safety is our top priority.
                         </p>
                     </details>
-                    
+
                     <details class="faq-item">
                         <summary class="faq-question" data-i18n="faq.q3">
                             How is pricing calculated?
                         </summary>
                         <p class="faq-answer" data-i18n="faq.a3">
-                            Pricing is transparent and based on factors like distance, duration, and service type. You'll see the estimated cost upfront before confirming your booking. No hidden charges.
+                            Pricing is transparent and based on factors like distance, duration, and service type.
+                            You'll see the estimated cost upfront before confirming your booking. No hidden charges.
                         </p>
                     </details>
-                    
+
                     <details class="faq-item">
                         <summary class="faq-question" data-i18n="faq.q4">
                             Can I book a driver for multiple days?
                         </summary>
                         <p class="faq-answer" data-i18n="faq.a4">
-                            Yes! We offer multi-day packages for outstation trips, events, and corporate needs. Contact our support team for custom packages tailored to your requirements.
+                            Yes! We offer multi-day packages for outstation trips, events, and corporate needs. Contact
+                            our support team for custom packages tailored to your requirements.
                         </p>
                     </details>
-                    
+
                     <details class="faq-item">
                         <summary class="faq-question" data-i18n="faq.q5">
                             What if I need to cancel my booking?
                         </summary>
                         <p class="faq-answer" data-i18n="faq.a5">
-                            You can cancel bookings through our app or website. Cancellation charges may apply based on timing. Free cancellation is available up to 2 hours before scheduled pickup.
+                            You can cancel bookings through our app or website. Cancellation charges may apply based on
+                            timing. Free cancellation is available up to 2 hours before scheduled pickup.
                         </p>
                     </details>
-                    
+
                     <details class="faq-item">
                         <summary class="faq-question" data-i18n="faq.q6">
                             Do you operate in my city?
                         </summary>
                         <p class="faq-answer" data-i18n="faq.a6">
-                            We currently operate in 25+ major cities across the country. Enter your location in our app to check availability in your area. We're constantly expanding to new cities!
+                            We currently operate in 25+ major cities across the country. Enter your location in our app
+                            to check availability in your area. We're constantly expanding to new cities!
                         </p>
                     </details>
                 </div>
             </div>
         </section>
-        
+
     </main>
-    
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -477,37 +453,28 @@
                 <!-- Column 1: Brand -->
                 <div class="footer-column">
                     <div class="footer-logo">
-                        <img src="logosandassets/RydCare /RC Car Logo/RC Transparent PNG.png" 
-                             alt="RydCare" 
-                             style="height: 40px; width: auto;">
+                        <img src="logosandassets/RydCare /RC Car Logo/RC Transparent PNG.png" alt="RydCare"
+                            style="height: 40px; width: auto;">
                     </div>
                     <p class="footer-tagline" data-i18n="footer.tagline">
                         Professional drivers at your service, anytime, anywhere.
                     </p>
                     <div class="social-links">
                         <a href="#" class="social-link" aria-label="Facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
                         </a>
                         <a href="#" class="social-link" aria-label="Twitter">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
                         </a>
                         <a href="#" class="social-link" aria-label="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                         </a>
                         <a href="#" class="social-link" aria-label="LinkedIn">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Column 2: Quick Links -->
                 <div class="footer-column">
                     <h4 class="footer-title" data-i18n="footer.quick_links">Quick Links</h4>
@@ -518,7 +485,7 @@
                         <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Column 3: Services -->
                 <div class="footer-column">
                     <h4 class="footer-title" data-i18n="footer.services">Services</h4>
@@ -529,7 +496,7 @@
                         <li><a href="#services" data-i18n="services.airport.title">Airport Transfer</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Column 4: Newsletter -->
                 <div class="footer-column">
                     <h4 class="footer-title" data-i18n="footer.newsletter">Stay Updated</h4>
@@ -538,22 +505,15 @@
                     </p>
                     <form class="newsletter-form" aria-labelledby="newsletter-title">
                         <label for="email-input" class="sr-only">Email address</label>
-                        <input 
-                            type="email" 
-                            id="email-input" 
-                            class="newsletter-input" 
-                            placeholder="Your email"
-                            data-i18n-placeholder="footer.email_placeholder"
-                            required 
-                            aria-required="true"
-                        >
+                        <input type="email" id="email-input" class="newsletter-input" placeholder="Your email"
+                            data-i18n-placeholder="footer.email_placeholder" required aria-required="true">
                         <button type="submit" class="newsletter-btn" data-i18n="footer.subscribe">
                             Subscribe
                         </button>
                     </form>
                 </div>
             </div>
-            
+
             <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <p class="copyright" data-i18n="footer.copyright">
@@ -569,16 +529,15 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Back to Top Button -->
     <a href="#top" class="back-to-top" aria-label="Back to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 19V5M5 12l7-7 7 7"/>
-        </svg>
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
     </a>
-    
+
     <!-- JavaScript -->
     <script src="js/i18n.js"></script>
     <script src="js/counter.js"></script>
 </body>
+
 </html>

@@ -322,10 +322,12 @@ body {
 /* Show/hide sun and moon icons */
 .sun-icon {
     display: block;
+    font-size: 1rem;
 }
 
 .moon-icon {
     display: none;
+    font-size: 1rem;
 }
 
 :root:has(#dark-toggle:checked) .sun-icon {
@@ -652,6 +654,7 @@ body {
 
 .scroll-arrow {
     opacity: 0.6;
+    font-size: 1.25rem;
 }
 
 @keyframes bounce {
@@ -721,6 +724,10 @@ body {
     color: var(--primary-600);
     margin-bottom: 1rem;
     display: inline-flex;
+}
+
+.stat-icon i {
+    font-size: 2.5rem;
 }
 
 .stat-number {
@@ -826,6 +833,10 @@ body {
     transition: all var(--transition-bounce);
 }
 
+.feature-icon i {
+    font-size: 1.75rem;
+}
+
 .feature-card:hover .feature-icon {
     transform: rotate(360deg) scale(1.15);
 }
@@ -914,6 +925,7 @@ body {
 .service-icon {
     color: var(--primary-600);
     transition: all var(--transition-base);
+    font-size: 2rem;
 }
 
 .service-card:hover .service-icon {
@@ -1092,6 +1104,7 @@ body {
     justify-content: center;
     color: var(--text-secondary);
     transition: all var(--transition-fast);
+    font-size: 1rem;
 }
 
 .social-link:hover {
@@ -1238,6 +1251,7 @@ body {
     transition: all var(--transition-base);
     box-shadow: var(--shadow-lg);
     z-index: 40;
+    font-size: 1rem;
 }
 
 /* Show button when scrolled down */
