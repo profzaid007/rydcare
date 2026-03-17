@@ -55,6 +55,15 @@
     --gradient-secondary: linear-gradient(135deg, #E89307 0%, #FAA307 100%);
     --gradient-accent: linear-gradient(90deg, #FAA307 0%, #FFB347 100%);
     --gradient-soft: linear-gradient(135deg, #FFF8E7 0%, #FFEACC 100%);
+
+    /* Radial glow gradients - light mode (subtle orange) */
+    --gradient-radial-tl: radial-gradient(circle at top left, rgba(250, 163, 7, 0.15), transparent 35%);
+    --gradient-radial-br: radial-gradient(circle at bottom right, rgba(232, 147, 7, 0.12), transparent 30%);
+    --gradient-radial-combined: radial-gradient(circle at top left, rgba(250, 163, 7, 0.15), transparent 35%), radial-gradient(circle at bottom right, rgba(232, 147, 7, 0.12), transparent 30%);
+
+    /* Grid overlay - light mode */
+    --grid-overlay: linear-gradient(to right, rgba(250, 163, 7, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(250, 163, 7, 0.05) 1px, transparent 1px);
+    --grid-size: 40px 40px;
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -94,6 +103,14 @@
     /* Orange glows for dark mode */
     --shadow-glow: 0 0 30px rgba(250, 163, 7, 0.3);
     --shadow-glow-pink: 0 0 30px rgba(250, 163, 7, 0.3);
+
+    /* Radial glow gradients - dark mode (blue like login page) */
+    --gradient-radial-tl: radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 35%);
+    --gradient-radial-br: radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.14), transparent 30%);
+    --gradient-radial-combined: radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 35%), radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.14), transparent 30%);
+
+    /* Grid overlay - dark mode */
+    --grid-overlay: linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
 }
 
 /* ============================================
@@ -153,6 +170,45 @@ body {
     max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
+}
+
+/* ============================================
+   GRADIENT BACKDROP UTILITY
+   Reusable radial glow + grid overlay layer.
+   Apply .gradient-backdrop to any section that
+   needs the ambient glow treatment.
+   ============================================ */
+.gradient-backdrop {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Radial glow layer */
+.gradient-backdrop::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-radial-combined);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Grid pattern layer */
+.gradient-backdrop::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--grid-overlay);
+    background-size: var(--grid-size);
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Ensure direct children sit above the pseudo-element layers */
+.gradient-backdrop > * {
+    position: relative;
+    z-index: 1;
 }
 
 /* ============================================
@@ -471,8 +527,36 @@ body {
     transition: background var(--transition-base);
 }
 
+/* Radial glow layer */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-radial-combined);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Grid pattern layer */
+.hero-section::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--grid-overlay);
+    background-size: var(--grid-size);
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Lift hero children above the glow/grid layers */
+.hero-section > * {
+    position: relative;
+    z-index: 1;
+}
+
 :root:has(#dark-toggle:checked) .hero-section {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #312e81 100%);
+    background: linear-gradient(135deg, #00111C 0%, #0A1929 60%, #001829 100%);
 }
 
 .hero-container {
