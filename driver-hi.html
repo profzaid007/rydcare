@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="hi" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="RydCare के साथ चलाएं — लचीले घंटे, साप्ताहिक भुगतान और समर्पित सहायता। हमारे पेशेवर ड्राइवरों के नेटवर्क में शामिल हों और अपने शेड्यूल के अनुसार कमाई करें।">
+    <meta name="keywords" content="हमारे साथ चलाएं, ड्राइवर नौकरियां, चालक नौकरियां, लचीला ड्राइविंग, ड्राइवर के रूप में कमाई">
+    <title>RydCare के साथ चलाएं - हमारे ड्राइवर नेटवर्क में शामिल हों</title>
+
+    <!-- Preload other language pages for faster switching -->
+    <link rel="prerender" href="index.html">
+    <link rel="prerender" href="index-hi.html">
+    <link rel="prerender" href="index-ta.html">
+    <link rel="prerender" href="driver.html">
+    <link rel="prerender" href="driver-ta.html">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-sans antialiased" style="background: var(--gradient-soft);">
+
+    <!-- Skip to main content (Accessibility) -->
+    <a href="#main-content" class="skip-link">मुख्य सामग्री पर जाएं</a>
+
+    <!-- Hidden checkboxes for CSS-only interactivity -->
+    <input type="checkbox" id="dark-toggle" class="hidden" aria-label="डार्क मोड टॉगल करें">
+    <input type="checkbox" id="menu-toggle" class="hidden" aria-label="मोबाइल मेनू टॉगल करें">
+
+    <!-- Persist dark mode preference -->
+    <script>
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.getElementById('dark-toggle').checked = true;
+        }
+        document.getElementById('dark-toggle').addEventListener('change', function() {
+            localStorage.setItem('darkMode', this.checked);
+        });
+    </script>
+
+    <!-- Navigation -->
+    <header class="header-nav">
+        <nav class="nav-container" aria-label="मुख्य नेविगेशन">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <a href="index-hi.html#top" class="logo" aria-label="RydCare होम">
+                        <img src="assets/logo-rc-symbol.png" alt="RydCare" class="logo-image">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="index-hi.html#home" class="nav-link">होम</a></li>
+                    <li><a href="index-hi.html#services" class="nav-link">सेवाएं</a></li>
+                    <li><a href="index-hi.html#why-us" class="nav-link">हमें क्यों चुनें</a></li>
+                    <li><a href="index-hi.html#faq" class="nav-link">सामान्य प्रश्न</a></li>
+                    <li><a href="driver-hi.html" class="nav-link">हमारे साथ चलाएं</a></li>
+                </ul>
+
+                <!-- Controls -->
+                <div class="nav-controls">
+                    <!-- Dark Mode Toggle -->
+                    <label for="dark-toggle" class="dark-mode-toggle" aria-label="डार्क मोड टॉगल करें" role="button"
+                        tabindex="0">
+                        <i class="fa-solid fa-sun sun-icon" aria-hidden="true"></i>
+                        <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
+                    </label>
+
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <a href="driver.html" class="lang-btn">EN</a>
+                        <a href="driver-hi.html" class="lang-btn active">HI</a>
+                        <a href="driver-ta.html" class="lang-btn">TA</a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <label for="menu-toggle" class="hamburger" aria-label="मेनू टॉगल करें" role="button" tabindex="0">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu">
+                <ul class="mobile-menu-links">
+                    <li><a href="index-hi.html#home" class="mobile-menu-link">होम</a></li>
+                    <li><a href="index-hi.html#services" class="mobile-menu-link">सेवाएं</a></li>
+                    <li><a href="index-hi.html#why-us" class="mobile-menu-link">हमें क्यों चुनें</a></li>
+                    <li><a href="index-hi.html#faq" class="mobile-menu-link">सामान्य प्रश्न</a></li>
+                    <li><a href="driver-hi.html" class="mobile-menu-link">हमारे साथ चलाएं</a></li>
+                </ul>
+                <div class="mobile-lang-switcher">
+                    <a href="driver.html" class="lang-btn">EN</a>
+                    <a href="driver-hi.html" class="lang-btn active">HI</a>
+                    <a href="driver-ta.html" class="lang-btn">TA</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Driver Hero Section -->
+        <section id="home" class="driver-hero">
+            <div class="driver-hero-container">
+                <h1 class="driver-hero-title">
+                    <span class="gradient-text">RydCare</span> के साथ चलाएं
+                </h1>
+                <p class="driver-hero-subtitle">
+                    हजारों पेशेवर ड्राइवरों के साथ जुड़ें जो अपनी शर्तों पर कमा रहे हैं। लचीले शेड्यूल, साप्ताहिक भुगतान और एक सहायता टीम जो हमेशा आपके साथ है।
+                </p>
+                <div class="driver-hero-cta">
+                    <a href="https://wa.me/YOUR_NUMBER?text=नमस्ते%2C%20मैं%20RydCare%20के%20साथ%20ड्राइव%20करने%20में%20रुचि%20रखता%20हूं" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem;" aria-hidden="true"></i>
+                        WhatsApp पर आवेदन करें
+                    </a>
+                    <a href="#benefits" class="btn btn-secondary">
+                        और जानें
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="driver-benefits gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">हमारे साथ क्यों चलाएं?</h2>
+                    <p class="section-subtitle">हम अपने ड्राइवरों में निवेश करते हैं क्योंकि वे RydCare की धड़कन हैं</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">लचीले घंटे</h3>
+                        <p class="benefit-desc">कब और कहां ड्राइव करना है, यह आप तय करें। सुबह की शिफ्ट, शाम, या वीकेंड — आपका शेड्यूल, आपकी मर्जी।</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">साप्ताहिक भुगतान</h3>
+                        <p class="benefit-desc">हर हफ्ते सीधे अपने बैंक खाते में भुगतान पाएं। कोई देरी नहीं, कोई छिपी कटौती नहीं — बस पारदर्शी कमाई।</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">बीमा कवरेज</h3>
+                        <p class="benefit-desc">ड्यूटी पर रहते हुए व्यापक दुर्घटना और देयता बीमा। आपकी सुरक्षा हमारे लिए मायने रखती है।</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">प्रशिक्षण प्रदान</h3>
+                        <p class="benefit-desc">मुफ्त पेशेवर ड्राइविंग प्रशिक्षण, ग्राहक सेवा कार्यशालाएं और अपनी कौशल को निखारने के लिए रक्षात्मक ड्राइविंग कोर्स।</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">24/7 सहायता</h3>
+                        <p class="benefit-desc">हमारी समर्पित ड्राइवर सहायता टीम किसी भी समस्या, प्रश्न या आपात स्थिति के लिए चौबीसों घंटे उपलब्ध है।</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-gift" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">बोनस प्रोत्साहन</h3>
+                        <p class="benefit-desc">रेफरल बोनस, पीक-आवर प्रोत्साहन और मासिक प्रदर्शन पुरस्कारों के माध्यम से अतिरिक्त कमाई करें।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="driver-steps gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">यह कैसे काम करता है</h2>
+                    <p class="section-subtitle">तीन सरल चरणों में ड्राइविंग शुरू करें</p>
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">साइन अप करें</h3>
+                        <p class="step-desc">WhatsApp के माध्यम से संपर्क करें या हमारा त्वरित आवेदन फॉर्म भरें। अपनी बुनियादी जानकारी और ड्राइविंग अनुभव साझा करें।</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">सत्यापित हों</h3>
+                        <p class="step-desc">त्वरित पृष्ठभूमि जांच और ड्राइविंग मूल्यांकन पूरा करें। हम आपके लाइसेंस को सत्यापित करते हैं और सुनिश्चित करते हैं कि आप सड़क के लिए तैयार हैं।</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">कमाना शुरू करें</h3>
+                        <p class="step-desc">सत्यापन के बाद, आप हमारे प्लेटफॉर्म पर लाइव हो जाते हैं। अपने शेड्यूल के अनुकूल राइड स्वीकार करें और तुरंत कमाना शुरू करें।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements Section -->
+        <section id="requirements" class="driver-requirements gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">आवश्यकताएं</h2>
+                    <p class="section-subtitle">हमारे ड्राइवर नेटवर्क में शामिल होने के लिए आपको क्या चाहिए</p>
+                </div>
+
+                <div class="requirements-list">
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-id-card" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">स्वच्छ रिकॉर्ड के साथ मान्य ड्राइविंग लाइसेंस</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-user-check" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">न्यूनतम आयु 21 वर्ष</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-file-shield" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">स्पष्ट पृष्ठभूमि सत्यापन जांच</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-car" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">मैनुअल और ऑटोमैटिक वाहनों की जानकारी</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">ऐप के लिए इंटरनेट एक्सेस के साथ स्मार्टफोन</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-language" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">अंग्रेजी या स्थानीय भाषा में बुनियादी संचार कौशल</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Driver FAQ Section -->
+        <section id="faq" class="faq-section gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">ड्राइवर सामान्य प्रश्न</h2>
+                    <p class="section-subtitle">हमारे ड्राइवर समुदाय से सामान्य प्रश्न</p>
+                </div>
+
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            RydCare ड्राइवर के रूप में मैं कितना कमा सकता हूं?
+                        </summary>
+                        <p class="faq-answer">
+                            कमाई इस बात पर निर्भर करती है कि आप कितने घंटे ड्राइव करते हैं, आप किस प्रकार की सेवाएं प्रदान करते हैं, और आपका स्थान क्या है। हमारे ज्यादातर फुल-टाइम ड्राइवर प्रतिस्पर्धी मासिक आय अर्जित करते हैं, और पार्ट-टाइम ड्राइवर अपनी कमाई को लचीले तरीके से बढ़ा सकते हैं। हम पारदर्शी प्रति-घंटा और प्रति-यात्रा दरें प्रदान करते हैं, कोई छिपी कटौती नहीं।
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            क्या मैं अपने काम के घंटे खुद चुन सकता हूं?
+                        </summary>
+                        <p class="faq-answer">
+                            बिल्कुल। आप तय करते हैं कि आप ड्राइव करने के लिए कब उपलब्ध हैं। चाहे आप सुबह, शाम, वीकेंड या केवल विशिष्ट दिनों में काम करना चाहते हैं — यह पूरी तरह से आप पर निर्भर है। आप ड्राइवर ऐप के माध्यम से किसी भी समय अपनी उपलब्धता अपडेट कर सकते हैं।
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            मुझे कैसे और कब भुगतान मिलता है?
+                        </summary>
+                        <p class="faq-answer">
+                            भुगतान साप्ताहिक रूप से प्रोसेस किए जाते हैं और सीधे आपके बैंक खाते में जमा होते हैं। आपको हर हफ्ते एक विस्तृत कमाई ब्रेकडाउन मिलेगा जिसमें पूरी की गई यात्राएं, काम किए गए घंटे और अर्जित कोई भी बोनस दिखाया जाएगा। कोई देरी नहीं, कोई आश्चर्य नहीं।
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            सत्यापन प्रक्रिया में क्या शामिल है?
+                        </summary>
+                        <p class="faq-answer">
+                            हमारे सत्यापन में पृष्ठभूमि जांच, ड्राइविंग लाइसेंस सत्यापन और एक संक्षिप्त व्यावहारिक ड्राइविंग मूल्यांकन शामिल है। इसमें आमतौर पर 2-3 कार्यदिवस लगते हैं। हम यह अपने ग्राहकों की सुरक्षा सुनिश्चित करने और अपनी सेवा की उच्च गुणवत्ता बनाए रखने के लिए करते हैं।
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            RydCare के साथ ड्राइव करने के लिए क्या मेरे पास कार होना जरूरी है?
+                        </summary>
+                        <p class="faq-answer">
+                            नहीं, आपके पास वाहन होना जरूरी नहीं है। RydCare ड्राइवरों को ग्राहकों के वाहन चलाने के लिए असाइन किया जाता है। आपको आपके स्थान और जिस प्रकार के वाहन को चलाने में आप सहज हैं, उसके आधार पर राइड से मैच किया जाएगा। हम विभिन्न वाहन प्रकारों पर प्रशिक्षण भी प्रदान करते हैं।
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            अगर मुझे सड़क पर समस्या आती है तो क्या सहायता उपलब्ध है?
+                        </summary>
+                        <p class="faq-answer">
+                            हमारी 24/7 ड्राइवर सहायता हेल्पलाइन हमेशा उपलब्ध है। चाहे नेविगेशन की समस्या हो, ग्राहक से संबंधित चिंता हो, वाहन की समस्या हो या आपात स्थिति — हमारी टीम बस एक कॉल दूर है। गैर-आपातकालीन प्रश्नों के लिए हमारे पास इन-ऐप चैट सुविधा भी है।
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="driver-cta-banner gradient-backdrop">
+            <div class="container">
+                <h2 class="driver-cta-title">ड्राइविंग शुरू करने के लिए तैयार हैं?</h2>
+                <p class="driver-cta-desc">
+                    आज ही RydCare ड्राइवर नेटवर्क में शामिल हों और अपनी कमाई की क्षमता को अपने हाथ में लें।
+                </p>
+                <div class="driver-cta-buttons">
+                    <a href="https://wa.me/YOUR_NUMBER?text=नमस्ते%2C%20मैं%20RydCare%20के%20साथ%20ड्राइव%20करने%20में%20रुचि%20रखता%20हूं" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem;" aria-hidden="true"></i>
+                        WhatsApp पर आवेदन करें
+                    </a>
+                    <a href="index-hi.html" class="btn btn-secondary">
+                        वापस होम पर जाएं
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/logo-rc-symbol.png" alt="RydCare">
+                    </div>
+                    <p class="footer-tagline">
+                        पेशेवर ड्राइवर आपकी सेवा में, कभी भी, कहीं भी।
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">त्वरित लिंक</h4>
+                    <ul class="footer-links">
+                        <li><a href="index-hi.html#home">होम</a></li>
+                        <li><a href="index-hi.html#services">सेवाएं</a></li>
+                        <li><a href="index-hi.html#why-us">हमें क्यों चुनें</a></li>
+                        <li><a href="index-hi.html#faq">सामान्य प्रश्न</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">ड्राइवरों के लिए</h4>
+                    <ul class="footer-links">
+                        <li><a href="#benefits">लाभ</a></li>
+                        <li><a href="#how-it-works">यह कैसे काम करता है</a></li>
+                        <li><a href="#requirements">आवश्यकताएं</a></li>
+                        <li><a href="#faq">ड्राइवर सामान्य प्रश्न</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">अपडेट रहें</h4>
+                    <p class="footer-text">
+                        अपडेट और विशेष ऑफर प्राप्त करने के लिए सब्सक्राइब करें।
+                    </p>
+                    <form class="newsletter-form" aria-labelledby="newsletter-title">
+                        <label for="email-input" class="sr-only">ईमेल पता</label>
+                        <input type="email" id="email-input" class="newsletter-input" placeholder="आपका ईमेल"
+                            required aria-required="true">
+                        <button type="submit" class="newsletter-btn">
+                            सब्सक्राइब करें
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2026 RydCare. सर्वाधिकार सुरक्षित।
+                </p>
+                <div class="legal-links">
+                    <a href="#">गोपनीयता नीति</a>
+                    <span class="separator">•</span>
+                    <a href="#">सेवा की शर्तें</a>
+                    <span class="separator">•</span>
+                    <a href="#">कुकी नीति</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/YOUR_NUMBER?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20driving%20with%20RydCare" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" aria-label="वापस ऊपर जाएं">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/counter.js"></script>
+    <script>
+        (function() {
+            var btn = document.querySelector('.back-to-top');
+            if (!btn) return;
+            function toggle() {
+                if (window.scrollY > 400) {
+                    btn.style.opacity = '0.9';
+                    btn.style.visibility = 'visible';
+                } else {
+                    btn.style.opacity = '';
+                    btn.style.visibility = '';
+                }
+            }
+            window.addEventListener('scroll', toggle, { passive: true });
+            toggle();
+        })();
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(() => {
+                console.log('Service Worker registered');
+            });
+        }
+    </script>
+</body>
+
+</html>

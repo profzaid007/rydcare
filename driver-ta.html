@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ta" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="RydCare உடன் ஓட்டவும் — நெகிழ்வான மணி, வாராந்திர செலுத்தல்கள் மற்றும் அர்ப்பணிக்கப்பட்ட ஆதரவு. எங்கள் தொழில்முறை ஓட்டுநர்களின் நெட்வொர்க்கில் இணைந்து உங்கள் அட்டவணையில் சம்பாதிக்கவும்.">
+    <meta name="keywords" content="எங்களுடன் ஓட்டவும், ஓட்டுநர் வேலைகள், சாரதி வேலைகள், நெகிழ்வான ஓட்டம், ஓட்டுநராக சம்பாதிக்கவும்">
+    <title>RydCare உடன் ஓட்டவும் - எங்கள் ஓட்டுநர் நெட்வொர்க்கில் இணையுங்கள்</title>
+
+    <!-- Preload other language pages for faster switching -->
+    <link rel="prerender" href="index.html">
+    <link rel="prerender" href="index-hi.html">
+    <link rel="prerender" href="index-ta.html">
+    <link rel="prerender" href="driver.html">
+    <link rel="prerender" href="driver-hi.html">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-sans antialiased" style="background: var(--gradient-soft);">
+
+    <!-- Skip to main content (Accessibility) -->
+    <a href="#main-content" class="skip-link">முக்கிய உள்ளடக்கத்திற்கு செல்லவும்</a>
+
+    <!-- Hidden checkboxes for CSS-only interactivity -->
+    <input type="checkbox" id="dark-toggle" class="hidden" aria-label="டார்க் மோட் மாற்று">
+    <input type="checkbox" id="menu-toggle" class="hidden" aria-label="மொபைல் மெனு மாற்று">
+
+    <!-- Persist dark mode preference -->
+    <script>
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.getElementById('dark-toggle').checked = true;
+        }
+        document.getElementById('dark-toggle').addEventListener('change', function() {
+            localStorage.setItem('darkMode', this.checked);
+        });
+    </script>
+
+    <!-- Navigation -->
+    <header class="header-nav">
+        <nav class="nav-container" aria-label="முக்கிய வழிசெலுத்தல்">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <a href="index-ta.html#top" class="logo" aria-label="RydCare முகப்பு">
+                        <img src="assets/logo-rc-symbol.png" alt="RydCare" class="logo-image">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="index-ta.html#home" class="nav-link">முகப்பு</a></li>
+                    <li><a href="index-ta.html#services" class="nav-link">சேவைகள்</a></li>
+                    <li><a href="index-ta.html#why-us" class="nav-link">ஏன் நாங்கள்</a></li>
+                    <li><a href="index-ta.html#faq" class="nav-link">கேள்விகள்</a></li>
+                    <li><a href="driver-ta.html" class="nav-link">எங்களுடன் ஓட்டவும்</a></li>
+                </ul>
+
+                <!-- Controls -->
+                <div class="nav-controls">
+                    <!-- Dark Mode Toggle -->
+                    <label for="dark-toggle" class="dark-mode-toggle" aria-label="டார்க் மோட் மாற்று" role="button"
+                        tabindex="0">
+                        <i class="fa-solid fa-sun sun-icon" aria-hidden="true"></i>
+                        <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
+                    </label>
+
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <a href="driver.html" class="lang-btn">EN</a>
+                        <a href="driver-hi.html" class="lang-btn">HI</a>
+                        <a href="driver-ta.html" class="lang-btn active">TA</a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <label for="menu-toggle" class="hamburger" aria-label="மெனு மாற்று" role="button" tabindex="0">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu">
+                <ul class="mobile-menu-links">
+                    <li><a href="index-ta.html#home" class="mobile-menu-link">முகப்பு</a></li>
+                    <li><a href="index-ta.html#services" class="mobile-menu-link">சேவைகள்</a></li>
+                    <li><a href="index-ta.html#why-us" class="mobile-menu-link">ஏன் நாங்கள்</a></li>
+                    <li><a href="index-ta.html#faq" class="mobile-menu-link">கேள்விகள்</a></li>
+                    <li><a href="driver-ta.html" class="mobile-menu-link">எங்களுடன் ஓட்டவும்</a></li>
+                </ul>
+                <div class="mobile-lang-switcher">
+                    <a href="driver.html" class="lang-btn">EN</a>
+                    <a href="driver-hi.html" class="lang-btn">HI</a>
+                    <a href="driver-ta.html" class="lang-btn active">TA</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Driver Hero Section -->
+        <section id="home" class="driver-hero">
+            <div class="driver-hero-container">
+                <h1 class="driver-hero-title">
+                    <span class="gradient-text">RydCare</span> உடன் ஓட்டவும்
+                </h1>
+                <p class="driver-hero-subtitle">
+                    சொந்த விதிமுறைகளில் சம்பாதிக்கும் ஆயிரக்கணக்கான தொழில்முறை ஓட்டுநர்களுடன் இணையுங்கள். நெகிழ்வான அட்டவணைகள், வாராந்திர செலுத்தல்கள் மற்றும் உங்களுக்கு ஆதரவாக நிற்கும் குழு.
+                </p>
+                <div class="driver-hero-cta">
+                    <a href="https://wa.me/YOUR_NUMBER?text=வணக்கம்%2C%20RydCare%20உடன்%20ஓட்ட%20ஆர்வமாக%20உள்ளேன்" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem;" aria-hidden="true"></i>
+                        WhatsApp மூலம் விண்ணப்பியுங்கள்
+                    </a>
+                    <a href="#benefits" class="btn btn-secondary">
+                        மேலும் அறிய
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="driver-benefits gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">எங்களுடன் ஏன் ஓட்ட வேண்டும்?</h2>
+                    <p class="section-subtitle">RydCare இன் இதயம் எங்கள் ஓட்டுநர்கள் என்பதால் அவர்களில் முதலீடு செய்கிறோம்</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">நெகிழ்வான மணி</h3>
+                        <p class="benefit-desc">எப்போது மற்றும் எங்கே ஓட்ட வேண்டும் என்பதை நீங்கள் முடிவு செய்யுங்கள். காலை ஷிப்ட், மாலை அல்லது வார இறுதி — உங்கள் அட்டவணை, உங்கள் விருப்பம்.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">வாராந்திர செலுத்தல்கள்</h3>
+                        <p class="benefit-desc">ஒவ்வொரு வாரமும் நேரடியாக உங்கள் வங்கிக் கணக்கில் செலுத்தல்களைப் பெறுங்கள். தாமதம் இல்லை, மறைக்கப்பட்ட கட்டணங்கள் இல்லை — வெளிப்படையான வருமானம் மட்டும்.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">காப்பீட்டு பாதுகாப்பு</h3>
+                        <p class="benefit-desc">பணியில் இருக்கும் போது விரிவான விபத்து மற்றும் பொறுப்பு காப்பீடு. உங்கள் பாதுகாப்பு எங்களுக்கு முக்கியம்.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">பயிற்சி வழங்கப்படுகிறது</h3>
+                        <p class="benefit-desc">இலவச தொழில்முறை ஓட்டும் பயிற்சி, வாடிக்கையாளர் சேவை பட்டறைகள் மற்றும் உங்கள் திறமைகளை கூர்மைப்படுத்த பாதுகாப்பான ஓட்டம் பாடநெறிகள்.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">24/7 ஆதரவு</h3>
+                        <p class="benefit-desc">எங்கள் அர்ப்பணிக்கப்பட்ட ஓட்டுநர் ஆதரவு குழு எந்த பிரச்சனை, கேள்வி அல்லது அவசர நிலைக்கும் 24 மணி நேரமும் கிடைக்கும்.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-gift" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">போனஸ் ஊக்கத்தொகை</h3>
+                        <p class="benefit-desc">ரெஃபரல் போனஸ், பீக்-அவர் ஊக்கத்தொகை மற்றும் மாதாந்திர செயல்திறன் விருதுகள் மூலம் கூடுதலாக சம்பாதிக்கவும்.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="driver-steps gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">இது எப்படி வேலை செய்கிறது</h2>
+                    <p class="section-subtitle">மூன்று எளிய படிகளில் ஓட்டத் தொடங்குங்கள்</p>
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">பதிவு செய்யுங்கள்</h3>
+                        <p class="step-desc">WhatsApp மூலம் தொடர்பு கொள்ளுங்கள் அல்லது எங்கள் விரைவான விண்ணப்ப படிவத்தை நிரப்புங்கள். உங்கள் அடிப்படை விவரங்கள் மற்றும் ஓட்டும் அனுபவத்தைப் பகிரவும்.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">சரிபார்க்கவும்</h3>
+                        <p class="step-desc">விரைவான பின்னணி சரிபார்ப்பு மற்றும் ஓட்டும் மதிப்பீட்டை முடிக்கவும். உங்கள் உரிமத்தை சரிபார்த்து, நீங்கள் சாலைக்கு தயாராக இருப்பதை உறுதி செய்கிறோம்.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">சம்பாதிக்கத் தொடங்குங்கள்</h3>
+                        <p class="step-desc">சரிபார்ப்புக்குப் பிறகு, நீங்கள் எங்கள் தளத்தில் நேரடியாக இருப்பீர்கள். உங்கள் அட்டவணைக்கு ஏற்ற பயணங்களை ஏற்றுக்கொண்டு உடனடியாக சம்பாதிக்கத் தொடங்குங்கள்.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements Section -->
+        <section id="requirements" class="driver-requirements gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">தேவைகள்</h2>
+                    <p class="section-subtitle">எங்கள் ஓட்டுநர் நெட்வொர்க்கில் இணைய உங்களுக்கு தேவையானவை</p>
+                </div>
+
+                <div class="requirements-list">
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-id-card" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">சுத்தமான பதிவுடன் செல்லுபடியாகும் ஓட்டுநர் உரிமம்</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-user-check" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">குறைந்தபட்ச வயது 21 ஆண்டுகள்</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-file-shield" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">தெளிவான பின்னணி சரிபார்ப்பு</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-car" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">மேனுவல் மற்றும் ஆட்டோமேடிக் வாகனங்களில் பரிச்சயம்</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">ஆப்பிற்கு இணைய அணுகலுடன் ஸ்மார்ட்போன்</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-language" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">ஆங்கிலம் அல்லது உள்ளூர் மொழியில் அடிப்படை தொடர்பு திறன்கள்</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Driver FAQ Section -->
+        <section id="faq" class="faq-section gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">ஓட்டுநர் கேள்விகள்</h2>
+                    <p class="section-subtitle">எங்கள் ஓட்டுநர் சமூகத்திடமிருந்து பொதுவான கேள்விகள்</p>
+                </div>
+
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            RydCare ஓட்டுநராக நான் எவ்வளவு சம்பாதிக்க முடியும்?
+                        </summary>
+                        <p class="faq-answer">
+                            வருமானம் நீங்கள் எத்தனை மணி நேரம் ஓட்டுகிறீர்கள், எந்த வகையான சேவைகளை வழங்குகிறீர்கள் மற்றும் உங்கள் இருப்பிடம் ஆகியவற்றைப் பொறுத்தது. எங்கள் முழுநேர ஓட்டுநர்களில் பெரும்பாலோர் போட்டி மாதாந்திர வருமானத்தை ஈட்டுகிறார்கள், மற்றும் பகுதிநேர ஓட்டுநர்கள் தங்கள் வருமானத்தை நெகிழ்வான முறையில் அதிகரிக்கலாம். மறைக்கப்பட்ட கட்டணங்கள் இல்லாத வெளிப்படையான மணிக்கு மற்றும் பயணத்திற்கான விகிதங்களை நாங்கள் வழங்குகிறோம்.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            எனது வேலை நேரத்தை நானே தேர்வு செய்ய முடியுமா?
+                        </summary>
+                        <p class="faq-answer">
+                            நிச்சயமாக. நீங்கள் ஓட்ட எப்போது கிடைப்பீர்கள் என்பதை நீங்கள் முடிவு செய்கிறீர்கள். காலை, மாலை, வார இறுதி அல்லது குறிப்பிட்ட நாட்களில் மட்டும் வேலை செய்ய விரும்பினாலும் — அது முற்றிலும் உங்களைப் பொறுத்தது. ஓட்டுநர் ஆப் மூலம் எந்த நேரத்திலும் உங்கள் கிடைக்கும் தன்மையை புதுப்பிக்கலாம்.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            எனக்கு எப்படி மற்றும் எப்போது சம்பளம் கிடைக்கும்?
+                        </summary>
+                        <p class="faq-answer">
+                            செலுத்தல்கள் வாராந்திர அடிப்படையில் செயலாக்கப்பட்டு நேரடியாக உங்கள் வங்கிக் கணக்கில் வரவு வைக்கப்படுகின்றன. ஒவ்வொரு வாரமும் முடிக்கப்பட்ட பயணங்கள், வேலை செய்த மணி மற்றும் சம்பாதித்த போனஸ் ஆகியவற்றைக் காட்டும் விரிவான வருமான பிரேக்க்டவுன் கிடைக்கும். தாமதம் இல்லை, ஆச்சரியங்கள் இல்லை.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            சரிபார்ப்பு செயல்முறையில் என்ன அடங்கும்?
+                        </summary>
+                        <p class="faq-answer">
+                            எங்கள் சரிபார்ப்பில் பின்னணி சரிபார்ப்பு, ஓட்டும் உரிமம் சரிபார்ப்பு மற்றும் சுருக்கமான நடைமுறை ஓட்டும் மதிப்பீடு அடங்கும். இதற்கு பொதுவாக 2-3 வேலை நாட்கள் ஆகும். எங்கள் வாடிக்கையாளர்களின் பாதுகாப்பை உறுதி செய்வதற்கும் எங்கள் சேவையின் உயர் தரத்தை பராமரிப்பதற்கும் இதை செய்கிறோம்.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            RydCare உடன் ஓட்ட எனக்கு சொந்த கார் தேவையா?
+                        </summary>
+                        <p class="faq-answer">
+                            இல்லை, உங்களுக்கு வாகனம் சொந்தமாக இருக்க தேவையில்லை. RydCare ஓட்டுநர்கள் வாடிக்கையாளர்களின் வாகனங்களை ஓட்ட நியமிக்கப்படுகிறார்கள். உங்கள் இருப்பிடம் மற்றும் நீங்கள் வசதியாக ஓட்டக்கூடிய வாகன வகையின் அடிப்படையில் பயணங்களுடன் பொருத்தப்படுவீர்கள். வெவ்வேறு வாகன வகைகளில் பயிற்சியும் வழங்குகிறோம்.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            சாலையில் பிரச்சனை ஏற்பட்டால் என்ன ஆதரவு கிடைக்கும்?
+                        </summary>
+                        <p class="faq-answer">
+                            எங்கள் 24/7 ஓட்டுநர் ஆதரவு ஹெல்ப்லைன் எப்போதும் கிடைக்கும். வழிசெலுத்தல் பிரச்சனையாக இருந்தாலும், வாடிக்கையாளர் கவலையாக இருந்தாலும், வாகன பிரச்சனையாக இருந்தாலும் அல்லது அவசர நிலையாக இருந்தாலும் — எங்கள் குழு ஒரு அழைப்பு தொலைவில் உள்ளது. அவசரமற்ற கேள்விகளுக்கு ஆப்பில் சாட் வசதியும் உள்ளது.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="driver-cta-banner gradient-backdrop">
+            <div class="container">
+                <h2 class="driver-cta-title">ஓட்டத் தொடங்க தயாரா?</h2>
+                <p class="driver-cta-desc">
+                    இன்றே RydCare ஓட்டுநர் நெட்வொர்க்கில் இணைந்து உங்கள் சம்பாதிக்கும் திறனை கட்டுப்படுத்துங்கள்.
+                </p>
+                <div class="driver-cta-buttons">
+                    <a href="https://wa.me/YOUR_NUMBER?text=வணக்கம்%2C%20RydCare%20உடன்%20ஓட்ட%20ஆர்வமாக%20உள்ளேன்" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem;" aria-hidden="true"></i>
+                        WhatsApp மூலம் விண்ணப்பியுங்கள்
+                    </a>
+                    <a href="index-ta.html" class="btn btn-secondary">
+                        முகப்பு பக்கம்
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/logo-rc-symbol.png" alt="RydCare">
+                    </div>
+                    <p class="footer-tagline">
+                        தொழில்முறை ஓட்டுநர்கள் உங்கள் சேவையில், எப்போதும், எங்கும்.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">விரைவு இணைப்புகள்</h4>
+                    <ul class="footer-links">
+                        <li><a href="index-ta.html#home">முகப்பு</a></li>
+                        <li><a href="index-ta.html#services">சேவைகள்</a></li>
+                        <li><a href="index-ta.html#why-us">ஏன் நாங்கள்</a></li>
+                        <li><a href="index-ta.html#faq">கேள்விகள்</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">ஓட்டுநர்களுக்கு</h4>
+                    <ul class="footer-links">
+                        <li><a href="#benefits">நன்மைகள்</a></li>
+                        <li><a href="#how-it-works">இது எப்படி வேலை செய்கிறது</a></li>
+                        <li><a href="#requirements">தேவைகள்</a></li>
+                        <li><a href="#faq">ஓட்டுநர் கேள்விகள்</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">புதுப்பிப்புகளைப் பெறுங்கள்</h4>
+                    <p class="footer-text">
+                        புதுப்பிப்புகள் மற்றும் சிறப்பு சலுகைகளைப் பெற குழுசேரவும்.
+                    </p>
+                    <form class="newsletter-form" aria-labelledby="newsletter-title">
+                        <label for="email-input" class="sr-only">மின்னஞ்சல் முகவரி</label>
+                        <input type="email" id="email-input" class="newsletter-input" placeholder="உங்கள் மின்னஞ்சல்"
+                            required aria-required="true">
+                        <button type="submit" class="newsletter-btn">
+                            குழுசேர்
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2026 RydCare. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.
+                </p>
+                <div class="legal-links">
+                    <a href="#">தனியுரிமைக் கொள்கை</a>
+                    <span class="separator">•</span>
+                    <a href="#">சேவை விதிமுறைகள்</a>
+                    <span class="separator">•</span>
+                    <a href="#">குக்கி கொள்கை</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/YOUR_NUMBER?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20driving%20with%20RydCare" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" aria-label="மீண்டும் மேலே செல்லவும்">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/counter.js"></script>
+    <script>
+        (function() {
+            var btn = document.querySelector('.back-to-top');
+            if (!btn) return;
+            function toggle() {
+                if (window.scrollY > 400) {
+                    btn.style.opacity = '0.9';
+                    btn.style.visibility = 'visible';
+                } else {
+                    btn.style.opacity = '';
+                    btn.style.visibility = '';
+                }
+            }
+            window.addEventListener('scroll', toggle, { passive: true });
+            toggle();
+        })();
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(() => {
+                console.log('Service Worker registered');
+            });
+        }
+    </script>
+</body>
+
+</html>

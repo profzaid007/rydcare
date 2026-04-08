@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Drive with RydCare — flexible hours, weekly payouts, and dedicated support. Join our network of professional drivers and earn on your own schedule.">
+    <meta name="keywords" content="drive with us, driver jobs, chauffeur jobs, flexible driving, earn as driver">
+    <title>Drive With RydCare - Join Our Driver Network</title>
+
+    <!-- Preload other language pages for faster switching -->
+    <link rel="prerender" href="index.html">
+    <link rel="prerender" href="index-hi.html">
+    <link rel="prerender" href="index-ta.html">
+    <link rel="prerender" href="driver-hi.html">
+    <link rel="prerender" href="driver-ta.html">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-sans antialiased" style="background: var(--gradient-soft);">
+
+    <!-- Skip to main content (Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Hidden checkboxes for CSS-only interactivity -->
+    <input type="checkbox" id="dark-toggle" class="hidden" aria-label="Toggle dark mode">
+    <input type="checkbox" id="menu-toggle" class="hidden" aria-label="Toggle mobile menu">
+
+    <!-- Persist dark mode preference -->
+    <script>
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.getElementById('dark-toggle').checked = true;
+        }
+        document.getElementById('dark-toggle').addEventListener('change', function() {
+            localStorage.setItem('darkMode', this.checked);
+        });
+    </script>
+
+    <!-- Navigation -->
+    <header class="header-nav">
+        <nav class="nav-container" aria-label="Main navigation">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <a href="index.html#top" class="logo" aria-label="RydCare Home">
+                        <img src="assets/logo-rc-symbol.png" alt="RydCare" class="logo-image">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#why-us" class="nav-link">Why Us</a></li>
+                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="driver.html" class="nav-link">Drive With Us</a></li>
+                </ul>
+
+                <!-- Controls -->
+                <div class="nav-controls">
+                    <!-- Dark Mode Toggle -->
+                    <label for="dark-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode" role="button"
+                        tabindex="0">
+                        <i class="fa-solid fa-sun sun-icon" aria-hidden="true"></i>
+                        <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
+                    </label>
+
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <a href="driver.html" class="lang-btn active">EN</a>
+                        <a href="driver-hi.html" class="lang-btn">HI</a>
+                        <a href="driver-ta.html" class="lang-btn">TA</a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <label for="menu-toggle" class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu">
+                <ul class="mobile-menu-links">
+                    <li><a href="index.html#home" class="mobile-menu-link">Home</a></li>
+                    <li><a href="index.html#services" class="mobile-menu-link">Services</a></li>
+                    <li><a href="index.html#why-us" class="mobile-menu-link">Why Us</a></li>
+                    <li><a href="index.html#faq" class="mobile-menu-link">FAQ</a></li>
+                    <li><a href="driver.html" class="mobile-menu-link">Drive With Us</a></li>
+                </ul>
+                <div class="mobile-lang-switcher">
+                    <a href="driver.html" class="lang-btn active">EN</a>
+                    <a href="driver-hi.html" class="lang-btn">HI</a>
+                    <a href="driver-ta.html" class="lang-btn">TA</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Driver Hero Section -->
+        <section id="home" class="driver-hero">
+            <div class="driver-hero-container">
+                <h1 class="driver-hero-title">
+                    Drive With <span class="gradient-text">RydCare</span>
+                </h1>
+                <p class="driver-hero-subtitle">
+                    Join thousands of professional drivers earning on their own terms. Flexible schedules, weekly payouts, and a support team that has your back.
+                </p>
+                <div class="driver-hero-cta">
+                    <a href="https://wa.me/YOUR_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20driving%20with%20RydCare" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem;" aria-hidden="true"></i>
+                        Apply via WhatsApp
+                    </a>
+                    <a href="#benefits" class="btn btn-secondary">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="driver-benefits gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Drive With Us?</h2>
+                    <p class="section-subtitle">We invest in our drivers because they are the heart of RydCare</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">Flexible Hours</h3>
+                        <p class="benefit-desc">Choose when and where you drive. Morning shifts, evenings, or weekends — you set your schedule.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">Weekly Payouts</h3>
+                        <p class="benefit-desc">Get paid every week directly to your bank account. No delays, no hidden deductions — just transparent earnings.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">Insurance Coverage</h3>
+                        <p class="benefit-desc">Comprehensive accident and liability insurance while you're on duty. Your safety matters to us.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">Training Provided</h3>
+                        <p class="benefit-desc">Free professional driving training, customer service workshops, and defensive driving courses to sharpen your skills.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">24/7 Support</h3>
+                        <p class="benefit-desc">Our dedicated driver support team is available around the clock for any issues, questions, or emergencies.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-gift" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-title">Bonus Incentives</h3>
+                        <p class="benefit-desc">Earn extra through referral bonuses, peak-hour incentives, and monthly performance rewards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="driver-steps gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How It Works</h2>
+                    <p class="section-subtitle">Start driving in three simple steps</p>
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Sign Up</h3>
+                        <p class="step-desc">Reach out via WhatsApp or fill out our quick application form. Share your basic details and driving experience.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Get Verified</h3>
+                        <p class="step-desc">Complete a quick background check and driving assessment. We verify your license and ensure you're ready for the road.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Start Earning</h3>
+                        <p class="step-desc">Once verified, you're live on our platform. Accept rides that fit your schedule and start earning immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements Section -->
+        <section id="requirements" class="driver-requirements gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Requirements</h2>
+                    <p class="section-subtitle">Here's what you need to join our driver network</p>
+                </div>
+
+                <div class="requirements-list">
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-id-card" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">Valid driving license with a clean record</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-user-check" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">Minimum age of 21 years</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-file-shield" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">Clear background verification check</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-car" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">Familiarity with manual and automatic vehicles</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">Smartphone with internet access for the app</p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fa-solid fa-language" aria-hidden="true"></i>
+                        </div>
+                        <p class="requirement-text">Basic communication skills in English or local language</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Driver FAQ Section -->
+        <section id="faq" class="faq-section gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Driver FAQs</h2>
+                    <p class="section-subtitle">Common questions from our driver community</p>
+                </div>
+
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            How much can I earn as a RydCare driver?
+                        </summary>
+                        <p class="faq-answer">
+                            Earnings depend on the number of hours you drive, the types of services you offer, and your location. Most of our full-time drivers earn competitive monthly incomes, and part-time drivers can supplement their earnings flexibly. We offer transparent per-hour and per-trip rates with no hidden cuts.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Can I choose my own working hours?
+                        </summary>
+                        <p class="faq-answer">
+                            Absolutely. You decide when you're available to drive. Whether you want to work mornings, evenings, weekends, or only on specific days — it's entirely up to you. You can update your availability anytime through the driver app.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            How and when do I get paid?
+                        </summary>
+                        <p class="faq-answer">
+                            Payments are processed weekly and deposited directly into your bank account. You'll receive a detailed earnings breakdown every week showing trips completed, hours worked, and any bonuses earned. No delays, no surprises.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            What does the verification process involve?
+                        </summary>
+                        <p class="faq-answer">
+                            Our verification includes a background check, driving license validation, and a brief practical driving assessment. This typically takes 2-3 business days. We do this to ensure the safety of our customers and maintain the high quality of our service.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Do I need to own a car to drive with RydCare?
+                        </summary>
+                        <p class="faq-answer">
+                            No, you don't need to own a vehicle. RydCare drivers are assigned to drive customers' vehicles. You'll be matched with rides based on your location and the type of vehicle you're comfortable driving. We also provide training on different vehicle types.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            What support is available if I face issues on the road?
+                        </summary>
+                        <p class="faq-answer">
+                            Our 24/7 driver support hotline is always available. Whether it's a navigation issue, customer concern, vehicle problem, or emergency — our team is just a call away. We also have an in-app chat feature for non-urgent queries.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="driver-cta-banner gradient-backdrop">
+            <div class="container">
+                <h2 class="driver-cta-title">Ready to Start Driving?</h2>
+                <p class="driver-cta-desc">
+                    Join the RydCare driver network today and take control of your earning potential.
+                </p>
+                <div class="driver-cta-buttons">
+                    <a href="https://wa.me/YOUR_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20driving%20with%20RydCare" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem;" aria-hidden="true"></i>
+                        Apply via WhatsApp
+                    </a>
+                    <a href="index.html" class="btn btn-secondary">
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/logo-rc-symbol.png" alt="RydCare">
+                    </div>
+                    <p class="footer-tagline">
+                        Professional drivers at your service, anytime, anywhere.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#why-us">Why Us</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">For Drivers</h4>
+                    <ul class="footer-links">
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#requirements">Requirements</a></li>
+                        <li><a href="#faq">Driver FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Stay Updated</h4>
+                    <p class="footer-text">
+                        Subscribe to get updates and special offers.
+                    </p>
+                    <form class="newsletter-form" aria-labelledby="newsletter-title">
+                        <label for="email-input" class="sr-only">Email address</label>
+                        <input type="email" id="email-input" class="newsletter-input" placeholder="Your email"
+                            required aria-required="true">
+                        <button type="submit" class="newsletter-btn">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2026 RydCare. All rights reserved.
+                </p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="#">Terms of Service</a>
+                    <span class="separator">•</span>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/YOUR_NUMBER?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20driving%20with%20RydCare" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/counter.js"></script>
+    <script>
+        (function() {
+            var btn = document.querySelector('.back-to-top');
+            if (!btn) return;
+            function toggle() {
+                if (window.scrollY > 400) {
+                    btn.style.opacity = '0.9';
+                    btn.style.visibility = 'visible';
+                } else {
+                    btn.style.opacity = '';
+                    btn.style.visibility = '';
+                }
+            }
+            window.addEventListener('scroll', toggle, { passive: true });
+            toggle();
+        })();
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(() => {
+                console.log('Service Worker registered');
+            });
+        }
+    </script>
+</body>
+
+</html>
