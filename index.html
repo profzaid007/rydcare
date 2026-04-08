@@ -9,50 +9,21 @@
     <meta name="keywords" content="driver service, chauffeur, car driver, hire driver, professional drivers">
     <title>RydCare - Premium Driver Booking Service</title>
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Preload other language pages for faster switching -->
+    <link rel="prerender" href="index-hi.html">
+    <link rel="prerender" href="index-ta.html">
+    <link rel="prerender" href="driver.html">
 
     <!-- Font Awesome for icons -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Tailwind Config -->
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-                        'display': ['Space Grotesk', 'Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: {
-                            50: '#eef2ff',
-                            100: '#e0e7ff',
-                            500: '#6366f1',
-                            600: '#4f46e5',
-                            700: '#4338ca',
-                            900: '#312e81',
-                        },
-                        accent: {
-                            500: '#ec4899',
-                            600: '#db2777',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
 <body class="font-sans antialiased">
@@ -64,6 +35,16 @@
     <input type="checkbox" id="dark-toggle" class="hidden peer/dark" aria-label="Toggle dark mode">
     <input type="checkbox" id="menu-toggle" class="hidden peer/menu" aria-label="Toggle mobile menu">
 
+    <!-- Persist dark mode preference -->
+    <script>
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.getElementById('dark-toggle').checked = true;
+        }
+        document.getElementById('dark-toggle').addEventListener('change', function() {
+            localStorage.setItem('darkMode', this.checked);
+        });
+    </script>
+
     <!-- Navigation -->
     <header class="header-nav">
         <nav class="nav-container" aria-label="Main navigation">
@@ -71,17 +52,18 @@
                 <!-- Logo -->
                 <div class="logo-container">
                     <a href="#top" class="logo" aria-label="RydCare Home">
-                        <img src="logosandassets/RydCare /RC Car Logo/RC Transparent PNG.png" alt="RydCare"
+                        <img src="assets/logo-rc-symbol.png" alt="RydCare"
                             class="logo-image">
                     </a>
                 </div>
 
                 <!-- Desktop Navigation Links -->
                 <ul class="nav-links">
-                    <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
-                    <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
-                    <li><a href="#why-us" class="nav-link" data-i18n="nav.why">Why Us</a></li>
-                    <li><a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="driver.html" class="nav-link nav-link-cta">Drive With Us</a></li>
                 </ul>
 
                 <!-- Controls (Dark Mode, Language, Mobile Menu) -->
@@ -93,14 +75,11 @@
                         <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
                     </label>
 
-                    <!-- Language Selector -->
-                    <div class="language-selector">
-                        <label for="lang-select" class="sr-only">Select Language</label>
-                        <select id="lang-select" class="lang-dropdown" aria-label="Choose language">
-                            <option value="en">EN</option>
-                            <option value="ta">TA</option>
-                            <option value="hi">HI</option>
-                        </select>
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <a href="index.html" class="lang-btn active" aria-label="English">EN</a>
+                        <a href="index-hi.html" class="lang-btn" aria-label="Hindi">HI</a>
+                        <a href="index-ta.html" class="lang-btn" aria-label="Tamil">TA</a>
                     </div>
 
                     <!-- Mobile Menu Toggle -->
@@ -115,11 +94,17 @@
             <!-- Mobile Navigation Menu -->
             <div class="mobile-menu">
                 <ul class="mobile-menu-links">
-                    <li><a href="#home" class="mobile-menu-link" data-i18n="nav.home">Home</a></li>
-                    <li><a href="#services" class="mobile-menu-link" data-i18n="nav.services">Services</a></li>
-                    <li><a href="#why-us" class="mobile-menu-link" data-i18n="nav.why">Why Us</a></li>
-                    <li><a href="#faq" class="mobile-menu-link" data-i18n="nav.faq">FAQ</a></li>
+                    <li><a href="#home" class="mobile-menu-link">Home</a></li>
+                    <li><a href="#services" class="mobile-menu-link">Services</a></li>
+                    <li><a href="#why-us" class="mobile-menu-link">Why Us</a></li>
+                    <li><a href="#faq" class="mobile-menu-link">FAQ</a></li>
+                    <li><a href="driver.html" class="mobile-menu-link mobile-menu-cta">Drive With Us</a></li>
                 </ul>
+                <div class="mobile-lang-switcher">
+                    <a href="index.html" class="lang-btn active">EN</a>
+                    <a href="index-hi.html" class="lang-btn">HI</a>
+                    <a href="index-ta.html" class="lang-btn">TA</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -133,23 +118,22 @@
                 <div class="hero-content">
                     <!-- Text Content -->
                     <div class="hero-text">
-                        <h1 class="hero-title" data-i18n="hero.title">
-                            Get a Driver in <span class="gradient-text">30 Minutes</span>
+                        <h1 class="hero-title">
+                            Your Ride, <span class="gradient-text">Minutes Away</span>
                         </h1>
-                        <p class="hero-subtitle" data-i18n="hero.subtitle">
-                            Professional, background-verified drivers at your doorstep. Drive in comfort while we handle
-                            the wheel.
+                        <p class="hero-subtitle">
+                            Professional, background-verified drivers at your doorstep. Drive in comfort while we handle the wheel.
                         </p>
                         <div class="hero-cta">
-                            <a href="#services" class="btn btn-primary" data-i18n="hero.cta_primary">Book Now</a>
-                            <a href="#why-us" class="btn btn-secondary" data-i18n="hero.cta_secondary">Learn More</a>
+                            <a href="#services" class="btn btn-primary">Book Now</a>
+                            <a href="#why-us" class="btn btn-secondary">Learn More</a>
                         </div>
                     </div>
 
                     <!-- Hero Image/Illustration -->
                     <div class="hero-image">
                         <div class="hero-image-wrapper">
-                            <img src="logosandassets/RydCare /RC Car Logo/RC Transparent PNG.png"
+                            <img src="assets/logo-rc-car.png"
                                 alt="RydCare Taxi Service" class="hero-logo">
                         </div>
                     </div>
@@ -157,7 +141,7 @@
 
                 <!-- Scroll Indicator -->
                 <div class="scroll-indicator">
-                    <span class="scroll-text" data-i18n="hero.scroll">Scroll Down</span>
+                    <span class="scroll-text">Scroll Down</span>
                     <i class="fa-solid fa-chevron-down scroll-arrow" aria-hidden="true"></i>
                 </div>
             </div>
@@ -172,7 +156,7 @@
                             <i class="fa-solid fa-route" aria-hidden="true"></i>
                         </div>
                         <div class="stat-number" data-target="9000000"></div>
-                        <div class="stat-label" data-i18n="stats.trips"></div>
+                        <div class="stat-label">Total Trips</div>
                     </div>
 
                     <div class="stat-card">
@@ -180,7 +164,7 @@
                             <i class="fa-solid fa-star" aria-hidden="true"></i>
                         </div>
                         <div class="stat-number" data-target="4.8">4.8★</div>
-                        <div class="stat-label" data-i18n="stats.rating">App Rating</div>
+                        <div class="stat-label">App Rating</div>
                     </div>
 
                     <div class="stat-card">
@@ -188,7 +172,7 @@
                             <i class="fa-solid fa-headset" aria-hidden="true"></i>
                         </div>
                         <div class="stat-number" data-target="24/7">24/7</div>
-                        <div class="stat-label" data-i18n="stats.cities">Service</div>
+                        <div class="stat-label">Service</div>
                     </div>
 
                     <div class="stat-card">
@@ -196,7 +180,7 @@
                             <i class="fa-solid fa-users" aria-hidden="true"></i>
                         </div>
                         <div class="stat-number" data-target="200000">200K+</div>
-                        <div class="stat-label" data-i18n="stats.customers">Happy Customers</div>
+                        <div class="stat-label">Happy Customers</div>
                     </div>
                 </div>
             </div>
@@ -206,9 +190,8 @@
         <section id="why-us" class="why-section gradient-backdrop">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title" data-i18n="why.title">Why Choose RydCare?</h2>
-                    <p class="section-subtitle" data-i18n="why.subtitle">Experience the difference with our premium
-                        driver service</p>
+                    <h2 class="section-title">Why Choose RydCare?</h2>
+                    <p class="section-subtitle">Experience the difference with our premium driver service</p>
                 </div>
 
                 <div class="features-grid">
@@ -217,12 +200,11 @@
                         <div class="feature-icon">
                             <i class="fa-solid fa-car" aria-hidden="true"></i>
                         </div>
-                        <h3 class="feature-title" data-i18n="why.comfort.title">Comfort & Convenience</h3>
-                        <p class="feature-description" data-i18n="why.comfort.desc">
-                            Relax in the backseat of your own car. No need to worry about traffic, parking, or
-                            navigation.
+                        <h3 class="feature-title">Comfort & Convenience</h3>
+                        <p class="feature-description">
+                            Relax in the backseat of your own car. No need to worry about traffic, parking, or navigation.
                         </p>
-                        <a href="#services" class="feature-link" data-i18n="why.comfort.link">
+                        <a href="#services" class="feature-link">
                             Learn More →
                         </a>
                     </div>
@@ -232,12 +214,11 @@
                         <div class="feature-icon">
                             <i class="fa-solid fa-tag" aria-hidden="true"></i>
                         </div>
-                        <h3 class="feature-title" data-i18n="why.transparent.title">Transparent Pricing</h3>
-                        <p class="feature-description" data-i18n="why.transparent.desc">
-                            No hidden charges. Clear upfront pricing so you know exactly what you're paying for every
-                            ride.
+                        <h3 class="feature-title">Transparent Pricing</h3>
+                        <p class="feature-description">
+                            No hidden charges. Clear upfront pricing so you know exactly what you're paying for every ride.
                         </p>
-                        <a href="#services" class="feature-link" data-i18n="why.transparent.link">
+                        <a href="#services" class="feature-link">
                             View Pricing →
                         </a>
                     </div>
@@ -247,12 +228,11 @@
                         <div class="feature-icon">
                             <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
                         </div>
-                        <h3 class="feature-title" data-i18n="why.verified.title">Verified Drivers</h3>
-                        <p class="feature-description" data-i18n="why.verified.desc">
-                            All our drivers undergo thorough background checks and professional training for your
-                            safety.
+                        <h3 class="feature-title">Verified Drivers</h3>
+                        <p class="feature-description">
+                            All our drivers undergo thorough background checks and professional training for your safety.
                         </p>
-                        <a href="#services" class="feature-link" data-i18n="why.verified.link">
+                        <a href="#services" class="feature-link">
                             Safety First →
                         </a>
                     </div>
@@ -264,9 +244,8 @@
         <section id="services" class="services-section gradient-backdrop">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title" data-i18n="services.title">Our Services</h2>
-                    <p class="section-subtitle" data-i18n="services.subtitle">Professional drivers for every occasion
-                    </p>
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Professional drivers for every occasion</p>
                 </div>
 
                 <div class="services-grid">
@@ -275,14 +254,14 @@
                         <div class="service-icon-wrapper">
                             <i class="fa-solid fa-hourglass-half service-icon" aria-hidden="true"></i>
                         </div>
-                        <h3 class="service-title" data-i18n="services.hourly.title">Hourly Booking</h3>
-                        <p class="service-description" data-i18n="services.hourly.desc">
+                        <h3 class="service-title">Hourly Booking</h3>
+                        <p class="service-description">
                             Hire a driver by the hour for shopping, errands, or multiple stops throughout the day.
                         </p>
                         <ul class="service-features">
-                            <li data-i18n="services.hourly.f1">Flexible timing</li>
-                            <li data-i18n="services.hourly.f2">Multiple stops</li>
-                            <li data-i18n="services.hourly.f3">Affordable rates</li>
+                            <li>Flexible timing</li>
+                            <li>Multiple stops</li>
+                            <li>Affordable rates</li>
                         </ul>
                     </div>
 
@@ -291,31 +270,30 @@
                         <div class="service-icon-wrapper">
                             <i class="fa-solid fa-crown service-icon" aria-hidden="true"></i>
                         </div>
-                        <h3 class="service-title" data-i18n="services.chauffeur.title">Premium Chauffeur</h3>
-                        <p class="service-description" data-i18n="services.chauffeur.desc">
+                        <h3 class="service-title">Premium Chauffeur</h3>
+                        <p class="service-description">
                             Professional chauffeurs for business meetings, events, and VIP transportation needs.
                         </p>
                         <ul class="service-features">
-                            <li data-i18n="services.chauffeur.f1">Professionally trained</li>
-                            <li data-i18n="services.chauffeur.f2">Impeccable service</li>
-                            <li data-i18n="services.chauffeur.f3">Executive experience</li>
+                            <li>Professionally trained</li>
+                            <li>Impeccable service</li>
+                            <li>Executive experience</li>
                         </ul>
                     </div>
 
                     <!-- Service 3 -->
                     <div class="service-card">
                         <div class="service-icon-wrapper">
-                            <i class="fa-solid fa-van-shuttle service-icon" aria-hidden="true"></i>
+                            <i class="fa-solid fa-building service-icon" aria-hidden="true"></i>
                         </div>
-                        <h3 class="service-title" data-i18n="services.corporate.title">Corporate Solutions</h3>
-                        <p class="service-description" data-i18n="services.corporate.desc">
-                            Reliable driver services for your business needs including employee transportation and fleet
-                            management.
+                        <h3 class="service-title">Corporate Solutions</h3>
+                        <p class="service-description">
+                            Comprehensive driver management for businesses. From employee commutes to executive transport, we handle it all with dedicated account managers.
                         </p>
                         <ul class="service-features">
-                            <li data-i18n="services.corporate.f1">Volume discounts</li>
-                            <li data-i18n="services.corporate.f2">Dedicated support</li>
-                            <li data-i18n="services.corporate.f3">Monthly billing</li>
+                            <li>Dedicated account manager</li>
+                            <li>Employee transportation</li>
+                            <li>Executive fleet services</li>
                         </ul>
                     </div>
 
@@ -324,15 +302,14 @@
                         <div class="service-icon-wrapper">
                             <i class="fa-solid fa-champagne-glasses service-icon" aria-hidden="true"></i>
                         </div>
-                        <h3 class="service-title" data-i18n="services.events.title">Event Drivers</h3>
-                        <p class="service-description" data-i18n="services.events.desc">
-                            Multiple drivers for weddings, parties, and special events to ensure everyone gets home
-                            safely.
+                        <h3 class="service-title">Event Drivers</h3>
+                        <p class="service-description">
+                            Multiple drivers for weddings, parties, and special events to ensure everyone gets home safely.
                         </p>
                         <ul class="service-features">
-                            <li data-i18n="services.events.f1">Multiple drivers</li>
-                            <li data-i18n="services.events.f2">Event coordination</li>
-                            <li data-i18n="services.events.f3">Custom packages</li>
+                            <li>Multiple drivers</li>
+                            <li>Event coordination</li>
+                            <li>Custom packages</li>
                         </ul>
                     </div>
 
@@ -341,14 +318,14 @@
                         <div class="service-icon-wrapper">
                             <i class="fa-solid fa-plane-departure service-icon" aria-hidden="true"></i>
                         </div>
-                        <h3 class="service-title" data-i18n="services.airport.title">Airport Transfer</h3>
-                        <p class="service-description" data-i18n="services.airport.desc">
+                        <h3 class="service-title">Airport Transfer</h3>
+                        <p class="service-description">
                             Stress-free airport pickups and drops with flight tracking and timely service guaranteed.
                         </p>
                         <ul class="service-features">
-                            <li data-i18n="services.airport.f1">Flight tracking</li>
-                            <li data-i18n="services.airport.f2">On-time guarantee</li>
-                            <li data-i18n="services.airport.f3">Luggage assistance</li>
+                            <li>Flight tracking</li>
+                            <li>On-time guarantee</li>
+                            <li>Luggage assistance</li>
                         </ul>
                     </div>
 
@@ -357,15 +334,57 @@
                         <div class="service-icon-wrapper">
                             <i class="fa-solid fa-location-dot service-icon" aria-hidden="true"></i>
                         </div>
-                        <h3 class="service-title" data-i18n="services.outstation.title">Outstation Trips</h3>
-                        <p class="service-description" data-i18n="services.outstation.desc">
+                        <h3 class="service-title">Outstation Trips</h3>
+                        <p class="service-description">
                             Long-distance driver services for outstation trips, weekend getaways, and road trips.
                         </p>
                         <ul class="service-features">
-                            <li data-i18n="services.outstation.f1">Long-distance ready</li>
-                            <li data-i18n="services.outstation.f2">Experienced drivers</li>
-                            <li data-i18n="services.outstation.f3">Competitive rates</li>
+                            <li>Long-distance ready</li>
+                            <li>Experienced drivers</li>
+                            <li>Competitive rates</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Us Section -->
+        <section id="join-us" class="join-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Join RydCare</h2>
+                    <p class="section-subtitle">Partner with us across multiple platforms</p>
+                </div>
+                <div class="join-grid">
+                    <div class="join-card">
+                        <div class="join-icon">
+                            <i class="fa-solid fa-user" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="join-title">For Customers</h3>
+                        <p class="join-description">
+                            Book professional drivers for your daily commute, business travel, or special occasions. Experience comfort and safety with every ride.
+                        </p>
+                        <a href="#services" class="btn btn-primary">Book a Driver</a>
+                    </div>
+                    <div class="join-card">
+                        <div class="join-icon">
+                            <i class="fa-solid fa-building" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="join-title">For Businesses</h3>
+                        <p class="join-description">
+                            Transform your employee transportation with our corporate solutions. Dedicated account managers, fleet management, and reliable service.
+                        </p>
+                        <a href="#services" class="btn btn-primary">Corporate Solutions</a>
+                    </div>
+                    <div class="join-card">
+                        <div class="join-icon">
+                            <i class="fa-solid fa-car-side" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="join-title">For Drivers</h3>
+                        <p class="join-description">
+                            Join our network of verified drivers and earn steady income. Flexible hours, weekly payments, and professional training provided.
+                        </p>
+                        <a href="driver.html" class="btn btn-primary">Drive With Us</a>
                     </div>
                 </div>
             </div>
@@ -375,69 +394,62 @@
         <section id="faq" class="faq-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
-                    <p class="section-subtitle" data-i18n="faq.subtitle">Everything you need to know about our service
-                    </p>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about our service</p>
                 </div>
 
                 <div class="faq-container">
                     <details class="faq-item">
-                        <summary class="faq-question" data-i18n="faq.q1">
+                        <summary class="faq-question">
                             How quickly can I get a driver?
                         </summary>
-                        <p class="faq-answer" data-i18n="faq.a1">
-                            Our drivers typically arrive within 30 minutes for instant bookings. You can also schedule
-                            drivers in advance for future trips at your convenience.
+                        <p class="faq-answer">
+                            Our drivers typically arrive within 30 minutes for instant bookings. You can also schedule drivers in advance for future trips at your convenience.
                         </p>
                     </details>
 
                     <details class="faq-item">
-                        <summary class="faq-question" data-i18n="faq.q2">
+                        <summary class="faq-question">
                             Are your drivers verified and trained?
                         </summary>
-                        <p class="faq-answer" data-i18n="faq.a2">
-                            Yes, absolutely. All our drivers undergo comprehensive background checks, verification
-                            processes, and professional training. Safety is our top priority.
+                        <p class="faq-answer">
+                            Yes, absolutely. All our drivers undergo comprehensive background checks, verification processes, and professional training. Safety is our top priority.
                         </p>
                     </details>
 
                     <details class="faq-item">
-                        <summary class="faq-question" data-i18n="faq.q3">
+                        <summary class="faq-question">
                             How is pricing calculated?
                         </summary>
-                        <p class="faq-answer" data-i18n="faq.a3">
-                            Pricing is transparent and based on factors like distance, duration, and service type.
-                            You'll see the estimated cost upfront before confirming your booking. No hidden charges.
+                        <p class="faq-answer">
+                            Pricing is transparent and based on factors like distance, duration, and service type. You'll see the estimated cost upfront before confirming your booking. No hidden charges.
                         </p>
                     </details>
 
                     <details class="faq-item">
-                        <summary class="faq-question" data-i18n="faq.q4">
+                        <summary class="faq-question">
                             Can I book a driver for multiple days?
                         </summary>
-                        <p class="faq-answer" data-i18n="faq.a4">
-                            Yes! We offer multi-day packages for outstation trips, events, and corporate needs. Contact
-                            our support team for custom packages tailored to your requirements.
+                        <p class="faq-answer">
+                            Yes! We offer multi-day packages for outstation trips, events, and corporate needs. Contact our support team for custom packages tailored to your requirements.
                         </p>
                     </details>
 
                     <details class="faq-item">
-                        <summary class="faq-question" data-i18n="faq.q5">
+                        <summary class="faq-question">
                             What if I need to cancel my booking?
                         </summary>
-                        <p class="faq-answer" data-i18n="faq.a5">
-                            You can cancel bookings through our app or website. Cancellation charges may apply based on
-                            timing. Free cancellation is available up to 2 hours before scheduled pickup.
+                        <p class="faq-answer">
+                            You can cancel bookings through our app or website. Cancellation charges may apply based on timing. Free cancellation is available up to 2 hours before scheduled pickup.
                         </p>
                     </details>
 
                     <details class="faq-item">
-                        <summary class="faq-question" data-i18n="faq.q6">
+                        <summary class="faq-question">
                             Do you operate in my city?
                         </summary>
-                        <p class="faq-answer" data-i18n="faq.a6">
-                            We currently operate in 25+ major cities across the country. Enter your location in our app
-                            to check availability in your area. We're constantly expanding to new cities!
+                        <p class="faq-answer">
+                            We currently operate in 25+ major cities across the country. Enter your location in our app to check availability in your area. We're constantly expanding to new cities!
                         </p>
                     </details>
                 </div>
@@ -453,10 +465,9 @@
                 <!-- Column 1: Brand -->
                 <div class="footer-column">
                     <div class="footer-logo">
-                        <img src="logosandassets/RydCare /RC Car Logo/RC Transparent PNG.png" alt="RydCare"
-                            style="height: 40px; width: auto;">
+                        <img src="assets/logo-rc-symbol.png" alt="RydCare">
                     </div>
-                    <p class="footer-tagline" data-i18n="footer.tagline">
+                    <p class="footer-tagline">
                         Professional drivers at your service, anytime, anywhere.
                     </p>
                     <div class="social-links">
@@ -477,37 +488,38 @@
 
                 <!-- Column 2: Quick Links -->
                 <div class="footer-column">
-                    <h4 class="footer-title" data-i18n="footer.quick_links">Quick Links</h4>
+                    <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="#home" data-i18n="nav.home">Home</a></li>
-                        <li><a href="#services" data-i18n="nav.services">Services</a></li>
-                        <li><a href="#why-us" data-i18n="nav.why">Why Us</a></li>
-                        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="driver.html">Drive With Us</a></li>
                     </ul>
                 </div>
 
                 <!-- Column 3: Services -->
                 <div class="footer-column">
-                    <h4 class="footer-title" data-i18n="footer.services">Services</h4>
+                    <h4 class="footer-title">Services</h4>
                     <ul class="footer-links">
-                        <li><a href="#services" data-i18n="services.hourly.title">Hourly Booking</a></li>
-                        <li><a href="#services" data-i18n="services.chauffeur.title">Premium Chauffeur</a></li>
-                        <li><a href="#services" data-i18n="services.corporate.title">Corporate Solutions</a></li>
-                        <li><a href="#services" data-i18n="services.airport.title">Airport Transfer</a></li>
+                        <li><a href="#services">Hourly Booking</a></li>
+                        <li><a href="#services">Premium Chauffeur</a></li>
+                        <li><a href="#services">Corporate Solutions</a></li>
+                        <li><a href="#services">Airport Transfer</a></li>
                     </ul>
                 </div>
 
                 <!-- Column 4: Newsletter -->
                 <div class="footer-column">
-                    <h4 class="footer-title" data-i18n="footer.newsletter">Stay Updated</h4>
-                    <p class="footer-text" data-i18n="footer.newsletter_text">
+                    <h4 class="footer-title">Stay Updated</h4>
+                    <p class="footer-text">
                         Subscribe to get updates and special offers.
                     </p>
                     <form class="newsletter-form" aria-labelledby="newsletter-title">
                         <label for="email-input" class="sr-only">Email address</label>
                         <input type="email" id="email-input" class="newsletter-input" placeholder="Your email"
-                            data-i18n-placeholder="footer.email_placeholder" required aria-required="true">
-                        <button type="submit" class="newsletter-btn" data-i18n="footer.subscribe">
+                            required aria-required="true">
+                        <button type="submit" class="newsletter-btn">
                             Subscribe
                         </button>
                     </form>
@@ -516,15 +528,15 @@
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p class="copyright" data-i18n="footer.copyright">
+                <p class="copyright">
                     © 2026 RydCare. All rights reserved.
                 </p>
                 <div class="legal-links">
-                    <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="#">Privacy Policy</a>
                     <span class="separator">•</span>
-                    <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                    <a href="#">Terms of Service</a>
                     <span class="separator">•</span>
-                    <a href="#" data-i18n="footer.cookies">Cookie Policy</a>
+                    <a href="#">Cookie Policy</a>
                 </div>
             </div>
         </div>
@@ -535,9 +547,31 @@
         <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
     </a>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
     <!-- JavaScript -->
-    <script src="js/i18n.js"></script>
     <script src="js/counter.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(() => {
+                console.log('Service Worker registered');
+            });
+        }
+    </script>
 </body>
 
 </html>

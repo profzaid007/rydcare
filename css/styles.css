@@ -7,22 +7,22 @@
    ROOT VARIABLES & THEME COLORS
    ============================================ */
 :root {
-    /* Primary Colors - RydCare Orange */
-    --primary-50: #FFF8E7;
-    --primary-100: #FFEACC;
-    --primary-500: #FAA307;
-    --primary-600: #E89307;
-    --primary-700: #D68307;
-    --primary-900: #8B5704;
+    /* Primary Colors - RydCare Midnight */
+    --primary-50: #EFF6FF;
+    --primary-100: #ECFEFF;
+    --primary-500: #0C4A6E;
+    --primary-600: #0891B2;
+    --primary-700: #155E75;
+    --primary-900: #164E63;
     
     /* Accent Colors */
-    --accent-500: #FAA307;
-    --accent-600: #E89307;
+    --accent-500: #0C4A6E;
+    --accent-600: #0891B2;
     
     /* RydCare Brand Colors */
     --dark-navy: #00111C;
     --off-white: #F8F8F8;
-    --rydcare-orange: #FAA307;
+    --rydcare-orange: #0C4A6E;
     
     /* Neutral Grays */
     --gray-50: #f8fafc;
@@ -42,27 +42,27 @@
     --warning: #f59e0b;
     
     /* Backgrounds & Text */
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8fafc;
-    --bg-tertiary: #f1f5f9;
-    --text-primary: #0f172a;
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #FFFFFF;
+    --bg-tertiary: #F0F9FF;
+    --text-primary: #0F172A;
     --text-secondary: #475569;
-    --text-tertiary: #64748b;
-    --border-color: #e2e8f0;
+    --text-tertiary: #94A3B8;
+    --border-color: #E2E8F0;
     
-    /* Gradients - RydCare Orange */
-    --gradient-primary: linear-gradient(135deg, #FAA307 0%, #FF8C00 100%);
-    --gradient-secondary: linear-gradient(135deg, #E89307 0%, #FAA307 100%);
-    --gradient-accent: linear-gradient(90deg, #FAA307 0%, #FFB347 100%);
-    --gradient-soft: linear-gradient(135deg, #FFF8E7 0%, #FFEACC 100%);
+    /* Gradients - RydCare Midnight */
+    --gradient-primary: linear-gradient(135deg, #0C4A6E 0%, #0891B2 100%);
+    --gradient-secondary: linear-gradient(135deg, #0891B2 0%, #0C4A6E 100%);
+    --gradient-accent: linear-gradient(90deg, #0891B2 0%, #67E8F9 100%);
+    --gradient-soft: linear-gradient(135deg, #EFF6FF 0%, #ECFEFF 100%);
 
-    /* Radial glow gradients - light mode (subtle orange) */
-    --gradient-radial-tl: radial-gradient(circle at top left, rgba(250, 163, 7, 0.15), transparent 35%);
-    --gradient-radial-br: radial-gradient(circle at bottom right, rgba(232, 147, 7, 0.12), transparent 30%);
-    --gradient-radial-combined: radial-gradient(circle at top left, rgba(250, 163, 7, 0.15), transparent 35%), radial-gradient(circle at bottom right, rgba(232, 147, 7, 0.12), transparent 30%);
+    /* Radial glow gradients - light mode (subtle blue) */
+    --gradient-radial-tl: radial-gradient(circle at top left, rgba(12, 74, 110, 0.10), transparent 35%);
+    --gradient-radial-br: radial-gradient(circle at bottom right, rgba(8, 145, 178, 0.08), transparent 30%);
+    --gradient-radial-combined: radial-gradient(circle at top left, rgba(12, 74, 110, 0.10), transparent 35%), radial-gradient(circle at bottom right, rgba(8, 145, 178, 0.08), transparent 30%);
 
     /* Grid overlay - light mode */
-    --grid-overlay: linear-gradient(to right, rgba(250, 163, 7, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(250, 163, 7, 0.05) 1px, transparent 1px);
+    --grid-overlay: linear-gradient(to right, rgba(8, 145, 178, 0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(8, 145, 178, 0.15) 1px, transparent 1px);
     --grid-size: 40px 40px;
     
     /* Shadows */
@@ -94,10 +94,22 @@
     --text-secondary: #cbd5e1;
     --text-tertiary: #94a3b8;
     --border-color: #1A2332;
-    
+
+    /* Keep orange brand in dark mode */
+    --primary-50: #FFF8E7;
+    --primary-100: #FFEACC;
+    --primary-500: #FAA307;
+    --primary-600: #E89307;
+    --primary-700: #D68307;
+    --primary-900: #8B5704;
+    --accent-500: #FAA307;
+    --accent-600: #E89307;
+    --rydcare-orange: #FAA307;
+
     /* Enhanced gradients for dark mode */
     --gradient-primary: linear-gradient(135deg, #FAA307 0%, #FFB347 100%);
     --gradient-secondary: linear-gradient(135deg, #FF8C00 0%, #FAA307 100%);
+    --gradient-accent: linear-gradient(90deg, #FAA307 0%, #FFB347 100%);
     --gradient-soft: linear-gradient(135deg, #0A1929 0%, #1A2332 100%);
     
     /* Orange glows for dark mode */
@@ -116,6 +128,11 @@
 /* ============================================
    GLOBAL RESETS & BASE STYLES
    ============================================ */
+:root {
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-display: 'Space Grotesk', 'Inter', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -128,11 +145,17 @@ html {
 }
 
 body {
-    background-color: var(--bg-primary);
+    font-family: var(--font-body);
+    background: var(--gradient-soft);
     color: var(--text-primary);
-    transition: background-color var(--transition-base), color var(--transition-base);
+    transition: background var(--transition-base), color var(--transition-base);
     min-height: 100vh;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    line-height: 1.6;
+    position: relative;
 }
 
 /* Screen reader only class */
@@ -151,7 +174,7 @@ body {
 /* Skip to main content link */
 .skip-link {
     position: absolute;
-    top: -40px;
+    top: -100px;
     left: 0;
     background: var(--primary-600);
     color: white;
@@ -218,14 +241,19 @@ body {
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(255, 255, 255, 0.8);
+    background: transparent;
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border-color);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     transition: all var(--transition-base);
 }
 
 :root:has(#dark-toggle:checked) .header-nav {
-    background: rgba(15, 23, 42, 0.8);
+    background: transparent;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: none;
 }
 
 .nav-container {
@@ -319,7 +347,7 @@ body {
     color: var(--text-secondary);
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 1rem;
     position: relative;
     transition: color var(--transition-fast);
 }
@@ -585,7 +613,7 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(3rem, 6vw, 4.5rem);
     font-weight: 900;
     line-height: 1.1;
     margin-bottom: 1.5rem;
@@ -612,7 +640,7 @@ body {
 }
 
 .hero-subtitle {
-    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.4rem);
     line-height: 1.7;
     color: var(--text-secondary);
     margin-bottom: 2rem;
@@ -627,10 +655,10 @@ body {
 }
 
 .btn {
-    padding: 0.875rem 2rem;
+    padding: 0.975rem 2.25rem;
     border-radius: 0.75rem;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.05rem;
     text-decoration: none;
     transition: all var(--transition-base);
     display: inline-flex;
@@ -778,13 +806,13 @@ body {
    ============================================ */
 .stats-section {
     padding: var(--section-padding);
-    background: var(--bg-primary);
+    background: transparent;
 }
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
     max-width: var(--container-max);
     margin: 0 auto;
 }
@@ -793,9 +821,15 @@ body {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 2.5rem 1.5rem;
     text-align: center;
     transition: all var(--transition-base);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    overflow: visible;
 }
 
 .stat-card:hover {
@@ -806,29 +840,42 @@ body {
 
 .stat-icon {
     color: var(--primary-600);
-    margin-bottom: 1rem;
-    display: inline-flex;
+    margin-bottom: 1.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .stat-icon i {
     font-size: 2.5rem;
+    line-height: 1;
 }
 
 .stat-number {
     font-size: 2.5rem;
     font-weight: 900;
+    line-height: 1.2;
+    width: 100%;
+    text-align: center;
+    display: block;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 0.5rem;
     font-family: var(--font-display);
+    overflow: visible;
+    word-wrap: break-word;
+    letter-spacing: -0.02em;
 }
 
 .stat-label {
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 500;
+    width: 100%;
+    text-align: center;
 }
 
 /* ============================================
@@ -840,14 +887,14 @@ body {
 }
 
 .section-title {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2.25rem, 4.5vw, 3.25rem);
     font-weight: 800;
     margin-bottom: 1rem;
     color: var(--text-primary);
 }
 
 .section-subtitle {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto;
@@ -926,7 +973,7 @@ body {
 }
 
 .feature-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--text-primary);
@@ -934,6 +981,7 @@ body {
 
 .feature-description {
     color: var(--text-secondary);
+    font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 1.5rem;
 }
@@ -1018,7 +1066,7 @@ body {
 }
 
 .service-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--text-primary);
@@ -1026,6 +1074,7 @@ body {
 
 .service-description {
     color: var(--text-secondary);
+    font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 1.5rem;
 }
@@ -1082,7 +1131,7 @@ body {
     padding: 1.5rem;
     cursor: pointer;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--text-primary);
     display: flex;
     justify-content: space-between;
@@ -1114,6 +1163,7 @@ body {
 .faq-answer {
     padding: 0 1.5rem 1.5rem 1.5rem;
     color: var(--text-secondary);
+    font-size: 1.05rem;
     line-height: 1.7;
     animation: slideDown 0.3s ease-out;
 }
@@ -1162,6 +1212,11 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.footer-logo img {
+    height: 40px;
+    width: auto;
+}
+
 .footer-logo svg {
     color: var(--primary-600);
 }
@@ -1199,7 +1254,7 @@ body {
 }
 
 .footer-title {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 0.5rem;
@@ -1226,7 +1281,7 @@ body {
 
 .footer-text {
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -1350,7 +1405,11 @@ body {
 body:has(#stats),
 body:has(#why-us),
 body:has(#services),
-body:has(#faq) {
+body:has(#faq),
+body:has(#home),
+body:has(#benefits),
+body:has(#how-it-works),
+body:has(#requirements) {
     .back-to-top {
         opacity: 0.9;
         visibility: visible;
@@ -1420,5 +1479,533 @@ body:has(#faq) {
         right: 1rem;
         width: 2.5rem;
         height: 2.5rem;
+    }
+}
+
+/* ============================================
+   LANGUAGE SWITCHER (Pill Style)
+   ============================================ */
+.lang-switcher {
+    display: flex;
+    gap: 0.25rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 9999px;
+    padding: 0.25rem;
+}
+
+.lang-btn {
+    padding: 0.35rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+    line-height: 1;
+}
+
+.lang-btn:hover {
+    color: var(--text-primary);
+    background: var(--bg-tertiary);
+}
+
+.lang-btn.active {
+    background: var(--primary-500);
+    color: white;
+}
+
+.lang-btn:focus {
+    outline: 2px solid var(--primary-500);
+    outline-offset: 1px;
+}
+
+/* Mobile language switcher */
+.mobile-lang-switcher {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem 1rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+}
+
+.mobile-lang-switcher .lang-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-fast);
+}
+
+.mobile-lang-switcher .lang-btn:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+/* ============================================
+   NAV CTA BUTTON
+   ============================================ */
+.nav-link-cta {
+    background: var(--primary-500);
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.nav-link-cta:hover {
+    background: var(--primary-600);
+    color: white;
+}
+
+.mobile-menu-cta {
+    background: var(--primary-500);
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/* ============================================
+   JOIN US SECTION
+   ============================================ */
+.join-section {
+    padding: var(--section-padding);
+    background: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.join-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-radial-combined);
+    pointer-events: none;
+}
+
+.join-section .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.join-section .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.join-section .section-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.join-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.join-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.join-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: var(--shadow-lg);
+}
+
+.join-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-soft);
+    border-radius: 50%;
+    color: var(--primary-500);
+    font-size: 1.5rem;
+}
+
+.join-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.join-description {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.join-cta {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-500);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+}
+
+.join-cta:hover {
+    background: var(--primary-600);
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .join-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .join-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .join-section .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* ============================================
+   WHATSAPP FLOATING BUTTON
+   ============================================ */
+.whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: #25D366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 45;
+    transition: all var(--transition-base);
+}
+
+.whatsapp-float i {
+    font-size: 1.5rem;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 1rem;
+        right: 1rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+        .whatsapp-float i {
+            font-size: 1.25rem;
+        }
+}
+
+/* ============================================
+   DRIVER PAGE STYLES
+   ============================================ */
+.driver-hero {
+    position: relative;
+    min-height: calc(100vh - 4.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    overflow: hidden;
+    background: var(--gradient-soft);
+    text-align: center;
+}
+
+.driver-hero .btn-secondary {
+    background: var(--gradient-primary);
+    border: 2px solid transparent;
+    color: white;
+}
+
+.driver-hero .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.driver-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-radial-combined);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Grid pattern layer */
+.driver-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--grid-overlay);
+    background-size: var(--grid-size);
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.driver-hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+.driver-hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.driver-hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.driver-hero-subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.driver-hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 0.875rem 2rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-whatsapp:hover {
+    background: #20BD5A;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.driver-benefits,
+.driver-steps,
+.driver-requirements {
+    padding: var(--section-padding);
+    background: transparent;
+}
+
+.benefits-grid,
+.steps-container,
+.requirements-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.benefit-card,
+.step-card,
+.requirement-item {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.benefit-card:hover,
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-500);
+}
+
+.benefit-icon,
+.requirement-icon {
+    color: var(--primary-600);
+    margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.benefit-icon i,
+.requirement-icon i {
+    font-size: 2.5rem;
+}
+
+.benefit-title,
+.step-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.benefit-desc,
+.step-desc {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.step-number {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto 1.5rem;
+}
+
+.requirement-text {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.driver-cta-banner {
+    padding: 4rem 1.5rem;
+    background: var(--gradient-primary);
+    text-align: center;
+}
+
+.driver-cta-title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.driver-cta-desc {
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.driver-cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.driver-cta-buttons .btn-secondary {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.4);
+    color: white;
+    padding: 0.875rem 2rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.driver-cta-buttons .btn-secondary:hover {
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.6);
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: #25D366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 45;
+    transition: all var(--transition-base);
+}
+
+.whatsapp-button i {
+    font-size: 1.5rem;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-button {
+        bottom: 1rem;
+        right: 1rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .whatsapp-button i {
+        font-size: 1.25rem;
     }
 }
