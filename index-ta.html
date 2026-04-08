@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ta" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="தொழில்முறை டிரைவர் முன்பதிவு சேவை - 30 நிமிடங்களில் சரிபார்க்கப்பட்ட டிரைவர்களைப் பெறுங்கள். மணி நேர, கார்ப்பரேட் மற்றும் தனிப்பட்ட போக்குவரத்து தேவைகளுக்கு பின்னணி-சரிபார்க்கப்பட்ட சோஃபர்கள்.">
+    <meta name="keywords" content="driver service, chauffeur, car driver, hire driver, professional drivers">
+    <title>RydCare - முதல் டிரைவர் முன்பதிவு சேவை</title>
+
+    <!-- Preload other language pages for faster switching -->
+    <link rel="prerender" href="index.html">
+    <link rel="prerender" href="index-hi.html">
+    <link rel="prerender" href="driver-ta.html">
+
+    <!-- Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-sans antialiased">
+
+    <!-- Skip to main content (Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Hidden checkboxes for CSS-only interactivity -->
+    <input type="checkbox" id="dark-toggle" class="hidden peer/dark" aria-label="Toggle dark mode">
+    <input type="checkbox" id="menu-toggle" class="hidden peer/menu" aria-label="Toggle mobile menu">
+
+    <!-- Persist dark mode preference -->
+    <script>
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.getElementById('dark-toggle').checked = true;
+        }
+        document.getElementById('dark-toggle').addEventListener('change', function() {
+            localStorage.setItem('darkMode', this.checked);
+        });
+    </script>
+
+    <!-- Navigation -->
+    <header class="header-nav">
+        <nav class="nav-container" aria-label="Main navigation">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <a href="#top" class="logo" aria-label="RydCare Home">
+                        <img src="assets/logo-rc-symbol.png" alt="RydCare"
+                            class="logo-image">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">முகப்பு</a></li>
+                    <li><a href="#services" class="nav-link">சேவைகள்</a></li>
+                    <li><a href="#why-us" class="nav-link">ஏன் நாங்கள்</a></li>
+                    <li><a href="#faq" class="nav-link">கேள்விகள்</a></li>
+                    <li><a href="driver-ta.html" class="nav-link nav-link-cta">எங்களுடன் இயக்குங்கள்</a></li>
+                </ul>
+
+                <!-- Controls (Dark Mode, Language, Mobile Menu) -->
+                <div class="nav-controls">
+                    <!-- Dark Mode Toggle -->
+                    <label for="dark-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode" role="button"
+                        tabindex="0">
+                        <i class="fa-solid fa-sun sun-icon" aria-hidden="true"></i>
+                        <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
+                    </label>
+
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <a href="index.html" class="lang-btn">EN</a>
+                        <a href="index-hi.html" class="lang-btn">HI</a>
+                        <a href="index-ta.html" class="lang-btn active">TA</a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <label for="menu-toggle" class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu">
+                <ul class="mobile-menu-links">
+                    <li><a href="#home" class="mobile-menu-link">முகப்பு</a></li>
+                    <li><a href="#services" class="mobile-menu-link">சேவைகள்</a></li>
+                    <li><a href="#why-us" class="mobile-menu-link">ஏன் நாங்கள்</a></li>
+                    <li><a href="#faq" class="mobile-menu-link">கேள்விகள்</a></li>
+                    <li><a href="driver-ta.html" class="mobile-menu-link mobile-menu-cta">எங்களுடன் இயக்குங்கள்</a></li>
+                </ul>
+                <div class="mobile-lang-switcher">
+                    <a href="index.html" class="lang-btn">EN</a>
+                    <a href="index-hi.html" class="lang-btn">HI</a>
+                    <a href="index-ta.html" class="lang-btn active">TA</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <!-- Text Content -->
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            உங்கள் பயணம், <span class="gradient-text">நிமிடங்களில்</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            உங்கள் வாசலிலேயே தொழில்முறை, பின்னணி-சரிபார்க்கப்பட்ட டிரைவர்கள். நீங்கள் ஆறுதலாக பயணிக்குங்கள், ஸ்டீயரிங்கை நாங்கள் கவனித்துக்கொள்கிறோம்.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#services" class="btn btn-primary">முன்பதிவு செய்யுங்கள்</a>
+                            <a href="#why-us" class="btn btn-secondary">மேலும் அறிவுங்கள்</a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image/Illustration -->
+                    <div class="hero-image">
+                        <div class="hero-image-wrapper">
+                            <img src="assets/logo-rc-car.png"
+                                alt="RydCare Taxi Service" class="hero-logo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <span class="scroll-text">கீழே ஸ்க்ரோல் செய்யுங்கள்</span>
+                    <i class="fa-solid fa-chevron-down scroll-arrow" aria-hidden="true"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section id="stats" class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-route" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-number" data-target="9000000"></div>
+                        <div class="stat-label">மொத்த பயணங்கள்</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-number" data-target="4.8">4.8★</div>
+                        <div class="stat-label">ஆப் மதிப்பீடு</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-number" data-target="24/7">24/7</div>
+                        <div class="stat-label">சேவை</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-number" data-target="200000">200K+</div>
+                        <div class="stat-label">மகிழ்ச்சியான வாடிக்கையாளர்கள்</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="why-section gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">RydCare ஐ ஏன் தேர்வு செய்கிறோம்?</h2>
+                    <p class="section-subtitle">எங்கள் முதல் டிரைவர் சேவையுடன் வேறுப்பட்ட அனுபவத்தைப் பெறுங்கள்</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-car" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="feature-title">வசதி மற்றும் சுலபம்</h3>
+                        <p class="feature-description">
+                            உங்கள் சொந்த காரின் பின் இருக்கையில் ஓய்வு பெறுங்கள். Traffic, பார்க்கிங் அல்லது வழிசெலுத்தல் பற்றி கவலைப்பட தேவையில்லை.
+                        </p>
+                        <a href="#services" class="feature-link">
+                            மேலும் அறிவுங்கள் →
+                        </a>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-tag" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="feature-title">வெளிப்படையான விலை நிர்ணயம்</h3>
+                        <p class="feature-description">
+                            மறைக்கப்பட்ட கட்டணங்கள் இல்லை. ஒவ்வொரு பயணத்திற்கும் நீங்கள் எவ்வளவு பணம் செலுத்துகிறீர்கள் என்பதை நீங்கள் தெரிவு கொள்ளும்படி தெளிவான முன் வைப்பு விலை.
+                        </p>
+                        <a href="#services" class="feature-link">
+                            விலையைக் காண்க →
+                        </a>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="feature-title">சரிபார்க்கப்பட்ட டிரைவர்கள்</h3>
+                        <p class="feature-description">
+                            உங்கள் பாதுகாப்பிற்காக எங்கள் டிரைவர்கள் அனைவரும் முழுமையான பின்னணி சரிபார்ப்பு மற்றும் தொழில் பயிற்சியை மேற்கொள்கிறார்கள்.
+                        </p>
+                        <a href="#services" class="feature-link">
+                            பாதுகாப்பு முதலில் →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">எங்கள் சேவைகள்</h2>
+                    <p class="section-subtitle">ஒவ்வொரு நிகழ்விற்கும் தொழில்முறை டிரைவர்கள்
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-hourglass-half service-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">மணி நேர முன்பதிவு</h3>
+                        <p class="service-description">
+                            shopping, errandகள் அல்லது day போன்ற பல stopsக்கு மணி நேரமாக டிரைவரை hire செய்யுங்கள்.
+                        </p>
+                        <ul class="service-features">
+                            <li>மெதுவான நேரம்</li>
+                            <li>பல stops</li>
+                            <li>மலிவான விலைகள்</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-crown service-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">பிரீமியம் சோஃபர்</h3>
+                        <p class="service-description">
+                            business meetingகள், நிகழ்வுகள் மற்றும் VIP போக்குவரத்து தேவைகளுக்கு தொழில்முறை சோஃபர்கள்.
+                        </p>
+                        <ul class="service-features">
+                            <li>தொழில் பயிற்றுவிக்கப்பட்ட</li>
+                            <li>மிகச்சிறந்த சேவை</li>
+                            <li>Executive அனுபவம்</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-building service-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">கார்ப்பரேட் தீர்வுகள்</h3>
+                        <p class="service-description">
+                            businessesக்கு முழு டிரைவர் மேலாண்மை. ஊழியர் commutes முதல் executive transport வரை, dedicated account manager உடன் நாங்கள் அனைத்தையும் கையாளுகிறோம்.
+                        </p>
+                        <ul class="service-features">
+                            <li>Dedicated account manager</li>
+                            <li>ஊழியர் போக்குவரத்து</li>
+                            <li>Executive fleet services</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-champagne-glasses service-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">நிகழ்வு டிரைவர்கள்</h3>
+                        <p class="service-description">
+                            weddings, parties மற்றும் special eventsக்கு பல டிரைவர்கள் - ஒவ்வொருவரும் பாதுகாப்பாக வீட்டிற்கு செல்வதை உறுதிப்படுத்த.
+                        </p>
+                        <ul class="service-features">
+                            <li>பல டிரைவர்கள்</li>
+                            <li>நிகழ்வு ஒருங்கிணைப்பு</li>
+                            <li>Custom பேக்கேஜ்கள்</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-plane-departure service-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">விமான நிலையம் மாற்றம்</h3>
+                        <p class="service-description">
+                            flight tracking மற்றும் நேரத்திற்கு உத்தரவாதம் தரும் stress-free விமான நிலையம் pickups மற்றும் drops.
+                        </p>
+                        <ul class="service-features">
+                            <li>Flight tracking</li>
+                            <li>நேரத்திற்கு உத்தரவாதம்</li>
+                            <li> Luggage உதவி</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-location-dot service-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">Outstation Trips</h3>
+                        <p class="service-description">
+                            outstation trips, weekend getaways மற்றும் road tripsக்கு நீண்ட தூர டிரைவர் சேவைகள்.
+                        </p>
+                        <ul class="service-features">
+                            <li>நீண்ட தூரத்திற்கு தயார்</li>
+                            <li>அனுபவம் உள்ள டிரைவர்கள்</li>
+                            <li>போட்டி விலைகள்</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">அடிக்கடி கேட்கப்படும் கேள்விகள்</h2>
+                    <p class="section-subtitle">எங்கள் சேவை பற்றி நீங்கள் அறிந்து கொள்ள வேண்டியது அனைத்தும்
+                    </p>
+                </div>
+
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            டிரைவரை விரைவாகப் பெற முடியுமா?
+                        </summary>
+                        <p class="faq-answer">
+                            Instant bookingsக்கு எங்கள் டிரைவர்கள் வழக்கமாக 30 நிமிடங்களுக்குள் வந்து விடுவார்கள். நீங்கள் விரும்பினால் future tripsக்கு முன்கூடியே டிரைவர்களை schedule செய்யலாம்.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            உங்கள் டிரைவர்கள் சரிபார்க்கப்பட்டு பயிற்றுவிக்கப்படுகிறார்களா?
+                        </summary>
+                        <p class="faq-answer">
+                            ஆம், முற்றிலும். எங்கள் டிரைவர்கள் அனைவரும் முழுமையான background checks, verification processes மற்றும் தொழில் பயிற்சிக்கு உட்படுவார்கள். பாதுகாப்பு எங்கள் முதல் முன்னுரிமை.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            விலை எவ்வாறு கணக்கிடப்படுகிறது?
+                        </summary>
+                        <p class="faq-answer">
+                            விலை transparent ஆகவும் distance, duration மற்றும் service type போன்ற காரணிகளை அடிப்படையாகக் கொண்டதாகவும் இருக்கிறது. உங்கள் booking ஐ உறுதிப்படுத்துவதற்கு முன் மதிப்பிடப்பட்ட செலவை நீங்கள் முன்னதாகவே காண்பீர்கள். மறைக்கப்பட்ட கட்டணங்கள் இல்லை.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            பல நாட்களுக்கு டிரைவரை முன்பதிவு செய்யலாமா?
+                        </summary>
+                        <p class="faq-answer">
+                            ஆம்! எங்கள் outstation trips, events மற்ற corporate தேவைகளுக்கு multi-day packages வழங்குகிறோம். உங்கள் தேவைகளுக்கு ஏற்ப custom packagesக்கு எங்கள் support team ஐத் தொடர்பு கொள்ளுங்கள்.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            என் booking ஐ நான் cancel செய்ய வேண்டும் என்றால்?
+                        </summary>
+                        <p class="faq-answer">
+                            எங்கள் app அல்லது website மூலம் bookings ஐ cancel செய்யலாம. Timingஐப் based செய்து cancellation charges apply ஆகலாம. Scheduled pickupக்கு 2 மணி நேரத்திற்கு முன் வரை free cancellation கிடைக்கிறது.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            நீங்கள் என் நகரத்தில் இயக்குகிறீர்களா?
+                        </summary>
+                        <p class="faq-answer">
+                            தற்போது 25+ major citiesல் இயக்குகிறோம். உங்கள் பகுதியில் இருக்கிறதா என்பதை சரிப்பதற்கு எங்கள் appல் உங்கள் location ஐ உள்ளிடுங்கள். புதிய நகரங்களுக்கு நாங்கள் தொடர்ந்து expand ஆகி வருகிறோம்!
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Us Section -->
+        <section id="join-us" class="join-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">RydCareஇல் சேர்க்கையாளுங்கள்</h2>
+                    <p class="section-subtitle">பல தளங்களில் எங்களுடன் கூட்டாக செயல்படுங்கள்</p>
+                </div>
+                <div class="join-grid">
+                    <div class="join-card">
+                        <div class="join-icon">
+                            <i class="fa-solid fa-user" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="join-title">வாடிக்கையாளர்களுக்கு</h3>
+                        <p class="join-description">
+                            உங்கள் daily commute, business travel அல்லது special occasionsக்கு professional drivers ஐ முன்பதிவு செய்யுங்கள். ஒவ்வொரு பயணத்திலும் வசதி மற்றும் பாதுகாப்பை அனுபவியுங்கள்.
+                        </p>
+                        <a href="#services" class="btn btn-primary">டிரைவரை முன்பதிவு செய்யுங்கள்</a>
+                    </div>
+                    <div class="join-card">
+                        <div class="join-icon">
+                            <i class="fa-solid fa-building" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="join-title">வணிகங்களுக்கு</h3>
+                        <p class="join-description">
+                            எங்கள் corporate solutions மூலம் உங்கள் ஊழியர் போக்குவரத்தை மாற்றுங்கள். Dedicated account managers, fleet management மற்றும் நம்பகமான சேவை.
+                        </p>
+                        <a href="#services" class="btn btn-primary">கார்ப்பரேட் தீர்வுகள்</a>
+                    </div>
+                    <div class="join-card">
+                        <div class="join-icon">
+                            <i class="fa-solid fa-car-side" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="join-title">டிரைவர்களுக்கு</h3>
+                        <p class="join-description">
+                            எங்கள் verified drivers நெட்வர்க்கில் சேர்ந்து stable income ஐப் பெறுங்கள். Flexible hours, weekly payments மற்றும் professional training வழங்கப்படுகிறது.
+                        </p>
+                        <a href="driver-ta.html" class="btn btn-primary">எங்களுடன் இயக்குங்கள்</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Brand -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/logo-rc-symbol.png" alt="RydCare">
+                    </div>
+                    <p class="footer-tagline">
+                        எந்நேரமும், எங்கும் உங்கள் சேவையில் தொழில்முறை டிரைவர்கள்.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-title">விரைவு இணைப்புகள்</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">முகப்பு</a></li>
+                        <li><a href="#services">சேவைகள்</a></li>
+                        <li><a href="#why-us">ஏன் நாங்கள்</a></li>
+                        <li><a href="#faq">கேள்விகள்</a></li>
+                        <li><a href="driver-ta.html">எங்களுடன் இயக்குங்கள்</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="footer-column">
+                    <h4 class="footer-title">சேவைகள்</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">மணி நேர முன்பதிவு</a></li>
+                        <li><a href="#services">பிரீமியம் சோஃபர்</a></li>
+                        <li><a href="#services">கார்ப்பரேட் தீர்வுகள்</a></li>
+                        <li><a href="#services">விமான நிலையம் மாற்றம்</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="footer-column">
+                    <h4 class="footer-title">புதுப்பிப்புகள் பெறுங்கள்</h4>
+                    <p class="footer-text">
+                        புதுப்பிப்புகள் மற்றும் சிறப்பு offers பெற சப்ஸ்க்ரைப் செய்யுங்கள்.
+                    </p>
+                    <form class="newsletter-form" aria-labelledby="newsletter-title">
+                        <label for="email-input" class="sr-only">Email address</label>
+                        <input type="email" id="email-input" class="newsletter-input" placeholder="உங்கள் ஈமெயில்"
+                            required aria-required="true">
+                        <button type="submit" class="newsletter-btn">
+                            சப்ஸ்க்ரைப் செய்யுங்கள்
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2026 RydCare. எல்லா உரிமைகளும் பாதுகாக்கப்பட்டவை.
+                </p>
+                <div class="legal-links">
+                    <a href="#">தனியுரிமைக் கொள்கை</a>
+                    <span class="separator">•</span>
+                    <a href="#">சேவை விதிமுறைகள்</a>
+                    <span class="separator">•</span>
+                    <a href="#">குக்கீ கொள்கை</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/counter.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(() => {
+                console.log('Service Worker registered');
+            });
+        }
+    </script>
+</body>
+
+</html>

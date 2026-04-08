@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="hi" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="प्रोफेशनल ड्राइवर बुकिंग सेवा - 30 मिनट में वेरिफाइड ड्राइवर पाएं। घंटे, कॉर्पोरेट और व्यक्तिगत परिवहन जरूरतों के लिए बैकग्राउंड-चेक्ड चauffeurs।">
+    <meta name="keywords" content="driver service, chauffeur, car driver, hire driver, professional drivers">
+    <title>RydCare - प्रीमियम ड्राइवर बुकिंग सेवा</title>
+
+    <!-- Preload other language pages for faster switching -->
+    <link rel="prerender" href="index.html">
+    <link rel="prerender" href="index-ta.html">
+    <link rel="prerender" href="driver-hi.html">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-sans antialiased">
+
+    <!-- Skip to main content (Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Hidden checkboxes for CSS-only interactivity -->
+    <input type="checkbox" id="dark-toggle" class="hidden peer/dark" aria-label="Toggle dark mode">
+    <input type="checkbox" id="menu-toggle" class="hidden peer/menu" aria-label="Toggle mobile menu">
+
+    <!-- Persist dark mode preference -->
+    <script>
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.getElementById('dark-toggle').checked = true;
+        }
+        document.getElementById('dark-toggle').addEventListener('change', function() {
+            localStorage.setItem('darkMode', this.checked);
+        });
+    </script>
+
+    <!-- Navigation -->
+    <header class="header-nav">
+        <nav class="nav-container" aria-label="Main navigation">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <a href="#top" class="logo" aria-label="RydCare Home">
+                        <img src="assets/logo-rc-symbol.png" alt="RydCare"
+                            class="logo-image">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">होम</a></li>
+                    <li><a href="#services" class="nav-link">सेवाएं</a></li>
+                    <li><a href="#why-us" class="nav-link">क्यों हम</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="driver-hi.html" class="nav-link nav-link-cta">हमारे साथ चलें</a></li>
+                </ul>
+
+                <!-- Controls (Dark Mode, Language, Mobile Menu) -->
+                <div class="nav-controls">
+                    <!-- Dark Mode Toggle -->
+                    <label for="dark-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode" role="button"
+                        tabindex="0">
+                        <i class="fa-solid fa-sun sun-icon" aria-hidden="true"></i>
+                        <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
+                    </label>
+
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <a href="index.html" class="lang-btn">EN</a>
+                        <a href="index-hi.html" class="lang-btn active">HI</a>
+                        <a href="index-ta.html" class="lang-btn">TA</a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <label for="menu-toggle" class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu">
+                <ul class="mobile-menu-links">
+                    <li><a href="#home" class="mobile-menu-link">होम</a></li>
+                    <li><a href="#services" class="mobile-menu-link">सेवाएं</a></li>
+                    <li><a href="#why-us" class="mobile-menu-link">क्यों हम</a></li>
+                    <li><a href="#faq" class="mobile-menu-link">FAQ</a></li>
+                    <li><a href="driver-hi.html" class="mobile-menu-link mobile-menu-cta">हमारे साथ चलें</a></li>
+                </ul>
+                <div class="mobile-lang-switcher">
+                    <a href="index.html" class="lang-btn">EN</a>
+                    <a href="index-hi.html" class="lang-btn active">HI</a>
+                    <a href="index-ta.html" class="lang-btn">TA</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <!-- Text Content -->
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            आपकी सवारी, <span class="gradient-text">मिनटों में</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            आपके दरवाजे पर प्रोफेशनल, बैकग्राउंड-वेरिफाइड ड्राइवर। आराम से यात्रा करें, स्टीयरिंग हम संभालते हैं।
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#services" class="btn btn-primary">बुक करें</a>
+                            <a href="#why-us" class="btn btn-secondary">और जानें</a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image/Illustration -->
+                    <div class="hero-image">
+                        <div class="hero-image-wrapper">
+                            <img src="assets/logo-rc-car.png"
+                                alt="RydCare Taxi Service" class="hero-logo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <span class="scroll-text">नीचे स्क्रॉल करें</span>
+                    <i class="fa-solid fa-chevron-down scroll-arrow" aria-hidden="true"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section id="stats" class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-route" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-number" data-target="9000000"></div>
+                        <div class="stat-label">कुल यात्राएं</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-number" data-target="4.8">4.8★</div>
+                        <div class="stat-label">ऐप रेटिंग</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-number" data-target="24/7">24/7</div>
+                        <div class="stat-label">सेवा</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-number" data-target="200000">200K+</div>
+                        <div class="stat-label">खुश ग्राहक</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="why-section gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">RydCare क्यों चुनें?</h2>
+                    <p class="section-subtitle">हमारी प्रीमियम ड्राइवर सेवा के साथ अनुभव का अंतर देखें</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-car" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="feature-title">आराम और सुविधा</h3>
+                        <p class="feature-description">
+                            अपनी कार की पिछली सीट पर आराम करें। ट्रैफिक, पार्किंग या नेविगेशन की चिंता न करें।
+                        </p>
+                        <a href="#services" class="feature-link">
+                            और जानें →
+                        </a>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-tag" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="feature-title">पारदर्शी मूल्य निर्धारण</h3>
+                        <p class="feature-description">
+                            कोई छिपी लागत नहीं। स्पष्ट अग्रिम मूल्य ताकि आप जान सकें कि आप हर राइड के लिए क्या भुगतान कर रहे हैं।
+                        </p>
+                        <a href="#services" class="feature-link">
+                            मूल्य देखें →
+                        </a>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="feature-title">वेरिफाइड ड्राइवर</h3>
+                        <p class="feature-description">
+                            सभी ड्राइवर आपकी सुरक्षा के लिए पूर्ण बैकग्राउंड चेक और प्रोफेशनल ट्रेनिंग से गुजरते हैं।
+                        </p>
+                        <a href="#services" class="feature-link">
+                            सुरक्षा पहले →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section gradient-backdrop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">हमारी सेवाएं</h2>
+                    <p class="section-subtitle">हर मौके के लिए प्रोफेशनल ड्राइवर
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-hourglass-half service-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">घंटे बुकिंग</h3>
+                        <p class="service-description">
+                            खरीदारी, कामकाज या दिन भर में कई स्टॉप के लिए घंटे के हिसाब से ड्राइवर हायर करें।
+                        </p>
+                        <ul class="service-features">
+                            <li>लचीला समय</li>
+                            <li>कई स्टॉप</li>
+                            <li>किफायती दरें</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-crown service-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">प्रीमियम शोफर</h3>
+                        <p class="service-description">
+                            बिजनेस मीटिंग, इवेंट्स और VIP परिवहन जरूरतों के लिए प्रोफेशनल शोफर।
+                        </p>
+                        <ul class="service-features">
+                            <li>प्रोफेशनली ट्रेंड</li>
+                            <li>बेमिसाल सेवा</li>
+                            <li>एग्जीक्यूटिव अनुभव</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-building service-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">कॉर्पोरेट समाधान</h3>
+                        <p class="service-description">
+                            व्यवसायों के लिए व्यापक ड्राइवर प्रबंधन। कर्मचारी आवाजाही से लेकर एक्जीक्यूटिव ट्रांसपोर्ट तक, हम समर्पित अकाउंट मैनेजर के साथ सब कुछ संभालते हैं।
+                        </p>
+                        <ul class="service-features">
+                            <li>समर्पित अकाउंट मैनेजर</li>
+                            <li>कर्मचारी परिवहन</li>
+                            <li>एग्जीक्यूटिव फ्लीट सेवाएं</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-champagne-glasses service-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">इवेंट ड्राइवर</h3>
+                        <p class="service-description">
+                            शादी, पार्टी और विशेष इवेंट्स के लिए कई ड्राइवर ताकि सभी सुरक्षित घर पहुंचें।
+                        </p>
+                        <ul class="service-features">
+                            <li>कई ड्राइवर</li>
+                            <li>इवेंट कोऑर्डिनेशन</li>
+                            <li>कस्टम पैकेज</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-plane-departure service-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">एयरपोर्ट ट्रांसफर</h3>
+                        <p class="service-description">
+                            फ्लाइट ट्रैकिंग और समय पर सेवा गारंटी के साथ तनावमुक्त एयरपोर्ट पिकअप और ड्रॉप।
+                        </p>
+                        <ul class="service-features">
+                            <li>फ्लाइट ट्रैकिंग</li>
+                            <li>समय पर गारंटी</li>
+                            <li>सामान सहायता</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-location-dot service-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">आउटस्टेशन ट्रिप</h3>
+                        <p class="service-description">
+                            आउटस्टेशन ट्रिप, वीकेंड गेटअवे और रोड ट्रिप के लिए लंबी दूरी की ड्राइवर सेवाएं।
+                        </p>
+                        <ul class="service-features">
+                            <li>लंबी दूरी के लिए तैयार</li>
+                            <li>अनुभवी ड्राइवर</li>
+                            <li>प्रतिस्पर्धी दरें</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Us Section -->
+        <section id="join-us" class="join-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">RydCare नेटवर्क में शामिल हों</h2>
+                    <p class="section-subtitle">चाहे आपको ड्राइवर चाहिए या ड्राइवर बनना चाहते हैं, हमारे पास आपके लिए जगह है</p>
+                </div>
+
+                <div class="join-grid">
+                    <div class="join-card">
+                        <div class="join-icon">
+                            <i class="fa-solid fa-user" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="join-title">ग्राहकों के लिए</h3>
+                        <p class="join-description">
+                            अपनी दैनिक आवाजाही, वीकेंड ट्रिप या विशेष मौके के लिए विश्वसनीय ड्राइवर चाहिए? मिनटों में वेरिफाइड प्रोफेशनल बुक करें और आराम से यात्रा करें।
+                        </p>
+                        <a href="#services" class="join-cta">
+                            सेवाएं देखें →
+                        </a>
+                    </div>
+
+                    <div class="join-card">
+                        <div class="join-icon">
+                            <i class="fa-solid fa-building" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="join-title">व्यवसायों के लिए</h3>
+                        <p class="join-description">
+                            कर्मचारी आवाजाही, क्लाइंट पिकअप या शोरूम ऑपरेशन के लिए ड्राइवर चाहिए? हम मांग पर वेटेड, प्रोफेशनल ड्राइवर प्रदान करते हैं — आपकी टीम के लिए लचीले कॉन्ट्रैक्ट और समर्पित सहायता के साथ।
+                        </p>
+                        <a href="#services" class="join-cta">
+                            बिजनेस प्लान देखें →
+                        </a>
+                    </div>
+
+                    <div class="join-card">
+                        <div class="join-icon">
+                            <i class="fa-solid fa-car-side" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="join-title">ड्राइवर के लिए</h3>
+                        <p class="join-description">
+                            प्रोफेशनल ड्राइवरों के हमारे नेटवर्क में शामिल हों और अपने शेड्यूल पर कमाएं। लचीले घंटे, साप्ताहिक भुगतान और समर्पित सहायता — जब चाहें, जहां चाहें ड्राइव करें।
+                        </p>
+                        <a href="driver-hi.html" class="join-cta">
+                            ड्राइविंग शुरू करें →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">अक्सर पूछे जाने वाले प्रश्न</h2>
+                    <p class="section-subtitle">हमारी सेवा के बारे में आपको जानने की जरूरत सब कुछ
+                    </p>
+                </div>
+
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            मुझे कितनी जल्दी ड्राइवर मिल सकता है?
+                        </summary>
+                        <p class="faq-answer">
+                            इंस्टेंट बुकिंग के लिए हमारे ड्राइवर आमतौर पर 30 मिनट के भीतर पहुंच जाते हैं। आप भविष्य की ट्रिप के लिए अपनी सुविधा के अनुसार पहले से भी ड्राइवर शेड्यूल कर सकते हैं।
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            क्या आपके ड्राइवर वेरिफाइड और ट्रेंड हैं?
+                        </summary>
+                        <p class="faq-answer">
+                            हां, बिल्कुल। सभी ड्राइवर व्यापक बैकग्राउंड चेक, वेरिफिकेशन प्रोसेस और प्रोफेशनल ट्रेनिंग से गुजरते हैं। सुरक्षा हमारी शीर्ष प्राथमिकता है।
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            मूल्य की गणना कैसे की जाती है?
+                        </summary>
+                        <p class="faq-answer">
+                            मूल्य पारदर्शी है और दूरी, अवधि और सेवा प्रकार जैसे कारकों पर आधारित है। बुकिंग कन्फर्म करने से पहले आप अनुमानित लागत पहले से देखेंगे। कोई छिपी लागत नहीं।
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            क्या मैं कई दिनों के लिए ड्राइवर बुक कर सकता हूं?
+                        </summary>
+                        <p class="faq-answer">
+                            हां! हम आउटस्टेशन ट्रिप, इवेंट्स और कॉर्पोरेट जरूरतों के लिए मल्टी-डे पैकेज प्रदान करते हैं। आपकी आवश्यकताओं के अनुसार कस्टम पैकेज के लिए हमारी सपोर्ट टीम से संपर्क करें।
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            अगर मुझे अपनी बुकिंग रद्द करनी पड़े तो क्या होगा?
+                        </summary>
+                        <p class="faq-answer">
+                            आप हमारे ऐप या वेबसाइट के माध्यम से बुकिंग रद्द कर सकते हैं। समय के आधार पर रद्द करने का शुल्क लागू हो सकता है। निर्धारित पिकअप से 2 घंटे पहले तक मुफ्त रद्दीकरण उपलब्ध है।
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            क्या आप मेरे शहर में संचालित हैं?
+                        </summary>
+                        <p class="faq-answer">
+                            हम वर्तमान में देश भर में 25+ प्रमुख शहरों में संचालित हैं। अपने क्षेत्र में उपलब्धता जांचने के लिए हमारे ऐप में अपना स्थान दर्ज करें। हम निरंतर नए शहरों में विस्तार कर रहे हैं!
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Brand -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/logo-rc-symbol.png" alt="RydCare"
+                            style="height: 40px; width: auto;">
+                    </div>
+                    <p class="footer-tagline">
+                        कभी भी, कहीं भी आपकी सेवा में प्रोफेशनल ड्राइवर।
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-title">त्वरित लिंक</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">होम</a></li>
+                        <li><a href="#services">सेवाएं</a></li>
+                        <li><a href="#why-us">क्यों हम</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="driver-hi.html">हमारे साथ चलें</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="footer-column">
+                    <h4 class="footer-title">सेवाएं</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">घंटे बुकिंग</a></li>
+                        <li><a href="#services">प्रीमियम शोफर</a></li>
+                        <li><a href="#services">कॉर्पोरेट समाधान</a></li>
+                        <li><a href="#services">एयरपोर्ट ट्रांसफर</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="footer-column">
+                    <h4 class="footer-title">अपडेट रहें</h4>
+                    <p class="footer-text">
+                        अपडेट और विशेष ऑफर प्राप्त करने के लिए सब्सक्राइब करें।
+                    </p>
+                    <form class="newsletter-form" aria-labelledby="newsletter-title">
+                        <label for="email-input" class="sr-only">Email address</label>
+                        <input type="email" id="email-input" class="newsletter-input" placeholder="आपका ईमेल"
+                            required aria-required="true">
+                        <button type="submit" class="newsletter-btn">
+                            सब्सक्राइब करें
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2026 RydCare. सर्वाधिकार सुरक्षित।
+                </p>
+                <div class="legal-links">
+                    <a href="#">गोपनीयता नीति</a>
+                    <span class="separator">•</span>
+                    <a href="#">सेवा की शर्तें</a>
+                    <span class="separator">•</span>
+                    <a href="#">कुकी नीति</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/counter.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(() => {
+                console.log('Service Worker registered');
+            });
+        }
+    </script>
+</body>
+
+</html>
